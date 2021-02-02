@@ -1,0 +1,16 @@
+@import "../abstracts/breakpoints";
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   @include media("<=laptop") {
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+   }
+   grid-gap: 3rem;
+   justify-content: center;
+   align-items: center;
+
+   @include media("<=tablet") {
+      grid-gap: 5rem;
+   }
+}

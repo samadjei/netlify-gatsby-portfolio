@@ -1,0 +1,123 @@
+@import "abstracts/breakpoints";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/hamburgers";
+@import "components/base";
+@import "components/socialButtons";
+
+@import "layout/grid";
+@import "layout/navbar";
+@import "layout/hero";
+@import "layout/moreInfo";
+@import "layout/about";
+@import "layout/services";
+@import "layout/projects";
+@import "layout/blog";
+@import "layout/contact";
+@import "layout/footer";
+
+@import "pages/404";
+@import "pages/posts";
+@import "pages/about";
+@import "pages/home";
+
+// @import "template/blogTemplate";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* automatically inherit box-sizing from the body element */
+  /* box-sizing: inherit; */
+  box-sizing: border-box;
+}
+
+/* setting the root font-size  */
+html {
+  box-sizing: border-box;
+  /* change to 1px so that we know that 1rem will equal 10px */
+  /* change the 10px to a percentage which will translate to the percentage given by the browser */
+  /* 10/16*100 */
+  /* this method is used when a user decides to adjust the font size on the browser  */
+  font-size: 62.5%;
+  //   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", "Open Sans", sans-serif;
+  background: #fffffe;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: $site-padding-m;
+  @include media("<=tablet") {
+    padding: $site-padding-ms;
+  }
+  @include media("<=phone") {
+    padding: $site-padding-s;
+    padding-bottom: 10rem;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: $primary-color;
+  padding-bottom: $p-bottom-xl;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 7rem auto;
+  &--inner {
+    position: relative;
+    font-size: 1.75rem;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2.5px;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}

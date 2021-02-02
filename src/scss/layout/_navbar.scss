@@ -1,0 +1,242 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/breakpoints";
+// !TODO
+// hamburger menu scrolling
+//sort out the menu items hover effect
+
+.active {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+}
+
+.navbar {
+  background: $primary-color;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
+  &--logo {
+    z-index: 9;
+    h3 {
+      color: $white;
+    }
+  }
+
+  //   &.active {
+  //     left: 0;
+  //     opacity: 1;
+  //     transition: all 0.3s ease;
+  //     z-index: 9;
+  //     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  //   }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include media(">=desktop") {
+      padding: 0 8rem;
+    }
+    padding: 0 4rem;
+
+    height: 8rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include media("<=tablet") {
+    &__socials {
+      display: none;
+    }
+  }
+
+  &__menus {
+    margin-top: 2.5rem;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2rem;
+  text-align: center;
+  padding-right: 3rem;
+  z-index: 2;
+  overflow: hidden;
+
+  &--links {
+    font-weight: 500;
+    position: relative;
+    color: $white;
+    @include media(">=tablet") {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &__social {
+    display: none;
+  }
+}
+
+#cta {
+  font-size: 1.6rem;
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+// *Hamburger Menu
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .navbar__menus {
+    margin-top: 0rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    //  transform: translateX(100%);
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      display: flex;
+      background: $secondary-color;
+      right: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+
+    &--links {
+      text-align: center;
+      padding: 2rem;
+      width: 30%;
+      margin: 0 auto;
+      display: table;
+      color: $white;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $text;
+        border-radius: 0;
+      }
+
+      &-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 30%;
+        text-decoration: none;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background: #fff;
+          color: #242424;
+          transition: 250ms;
+        }
+      }
+    }
+
+    &__socials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      width: 80vw;
+      margin: 0 auto;
+      margin-top: 8rem;
+    }
+
+    &__social {
+      display: block;
+    }
+  }
+
+  .social-item {
+    display: inline-block;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $white;
+      transform: translate(0, -8px);
+    }
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    height: 1rem;
+    z-index: 9;
+  }
+}
+
+.hamburger {
+  margin-right: -4rem;
+}

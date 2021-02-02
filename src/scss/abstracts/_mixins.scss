@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+@mixin hr-line {
+   // display list items horizontally
+   display: inline-block;
+   color: $primary-color;
+   padding-right: 16rem;
+   // padding-right: 7.188rem;
+   position: relative;
+   margin-bottom: 0.938rem;
+
+   // vertically align the horizontal line next to the h2 element
+   &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      min-width: 14rem;
+      background-color: #3a414e;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+   }
+}
+
+// @mixin icon-hover {
+
+// }
+

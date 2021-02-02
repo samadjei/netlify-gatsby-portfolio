@@ -1,0 +1,14 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.hire {
+  max-width: 86rem;
+  margin: 0 auto;
+  text-align: center;
+  &--reasons {
+    padding-bottom: 3rem;
+	 letter-spacing: 0.8px;
+	 font-size: 1.75rem;
+  }
+}

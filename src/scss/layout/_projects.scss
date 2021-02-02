@@ -1,0 +1,30 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.pj.container {
+  padding-top: 0rem;
+}
+
+.project-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 4rem;
+}
+
+.project__img {
+  box-shadow: $dark-shadow;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.projects-page {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}

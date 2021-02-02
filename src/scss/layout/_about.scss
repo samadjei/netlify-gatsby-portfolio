@@ -1,0 +1,72 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.about {
+  &__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__content {
+    &--info {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.about-img {
+  margin: 2rem 0;
+}
+.about--photo {
+  display: inline-block;
+  width: 20rem;
+  height: 100%;
+  z-index: -1;
+  @include media("<=laptop") {
+    width: 25rem;
+  }
+}
+
+.stack {
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  &-icons {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.about__contact {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.about .about-me h2 {
+  text-align: left;
+}
+
+.about__contact .title,
+.about__contact .contact--sub {
+  text-align: left;
+}
+
+.about__contact .contact {
+  padding: 0rem;
+  margin-top: 4rem;
+}
+
+.about__contact .container {
+  padding: 5rem 0rem;
+}
+
+.about.container {
+  width: 710px;
+}

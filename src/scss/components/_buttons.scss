@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+.btn {
+  padding: 0.8rem 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #016795;
+  color: #fff;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn--primary {
+  background-color: white;
+}
+
+.btn--outline {
+  color: $white;
+  padding: 8px 20px;
+}
+
+.btn--desktop {
+  padding: 12px 26px;
+  font-size: 20px;
+}

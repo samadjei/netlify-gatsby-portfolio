@@ -1,0 +1,73 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: $primary-color;
+  &--name {
+    text-align: center;
+  }
+
+  &--titles {
+    margin-bottom: 0.75rem;
+  }
+
+  //   !sort this out
+  &--subhead {
+    color: $text;
+  }
+
+  &--links {
+    padding: 5px 0;
+  }
+
+  &__container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10rem 5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: center;
+    grid-gap: 3rem;
+    text-align: left;
+    margin-bottom: 7rem;
+    justify-items: center;
+    @include media("<=tablet") {
+      justify-items: start;
+    }
+  }
+
+  &__center {
+    @include media("<=tablet", ">=tablet") {
+      margin: 0 auto;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 2rem;
+  }
+}
+
+.socials {
+  &__outer {
+    &:nth-child(3) {
+      margin: 0 1.25rem;
+    }
+  }
+  &--inner {
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+.white {
+  color: $white;
+}

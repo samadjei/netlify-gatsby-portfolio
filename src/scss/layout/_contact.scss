@@ -1,0 +1,54 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.contact {
+  max-width: 50rem;
+  width: 100%;
+  min-height: 20rem;
+  padding: 4rem;
+  margin: auto;
+  transition: all 0.5s ease-in;
+
+  &--sub {
+    text-align: center;
+    margin-top: -2.5rem;
+  }
+  &--sub2 {
+    text-align: center;
+    margin-top: 1rem;
+    .twitter {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+
+  &--hire {
+    font-weight: bold;
+  }
+
+  &__info {
+    margin-bottom: 1.5rem;
+  }
+
+  &__submit {
+    margin-top: 2rem;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #000;
+  width: 100%;
+  padding: 12px;
+  &::placeholder {
+    color: #acabab;
+  }
+}

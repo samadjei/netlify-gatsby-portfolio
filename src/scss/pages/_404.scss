@@ -1,0 +1,16 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.error {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 80rem;
+   text-align: center;
+   line-height: 2rem;
+   height: 70vh;
+   margin: 0 auto;
+}

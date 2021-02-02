@@ -1,0 +1,106 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+// Blogs
+
+.blog__container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5rem 5rem;
+}
+
+// .blog {
+//   display: block;
+//   margin-bottom: 2rem;
+//   background: $white;
+//   border-radius: 5px;
+//   box-shadow: $light-shadow;
+//   width: 100%;
+//   transition: all 0.5s ease-in-out;
+//   &:hover {
+//     box-shadow: $dark-shadow;
+//     transform: scale(1.02);
+//   }
+
+//   &__img {
+//     border-top-left-radius: 5px;
+//     border-top-right-radius: 5px;
+//     height: 15rem;
+
+//     @include media("<=laptop") {
+//       height: 13.75rem;
+//     }
+//   }
+//   &__layout {
+//     height: 100%;
+//     display: grid;
+//     grid-template-rows: auto 1fr;
+//   }
+//   &__card {
+//     display: grid;
+//     grid-template-rows: auto 1fr auto;
+//     padding: 1.5rem 1rem;
+//   }
+//   &--title {
+//     color: $primary-color;
+//   }
+//   &__footer {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 2rem;
+//   }
+//   &--category {
+//     display: inline-block;
+//     background: $secondary-color;
+//     color: $white;
+//     margin-right: 0.5rem;
+//     padding: 0.5rem 0.75rem;
+//     border-radius: 2.75px;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//     font-size: 0.85rem;
+//     margin-bottom: 0;
+//     font-weight: bold;
+//   }
+// }
+
+// @media screen and (min-width: 576px) {
+//   .blogs-center {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+//     column-gap: 2rem;
+//   }
+//   .blog__img {
+//     height: 17.5rem;
+//   }
+// }
+
+.front__blog {
+  max-width: 96rem;
+  margin: 0 auto;
+  &--list {
+    // position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    padding: 2rem 0;
+
+    &:hover {
+      background-color: $secondary-color;
+      padding: 2rem;
+      .blog--details {
+        color: $white;
+      }
+    }
+  }
+}

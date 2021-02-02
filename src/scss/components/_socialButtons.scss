@@ -1,0 +1,50 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/breakpoints";
+
+.fixed-left {
+   position: fixed;
+   top: 50%;
+	left: 5rem;
+	@include media("<=laptop") {
+		left: 4rem;
+	}
+	@include media("<=tablet") {
+		display: none;
+	}
+   li {
+      padding-bottom: 1.75rem;
+   }
+   svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      stroke: $primary-color;
+      transition: all 0.5s ease;
+
+      &:hover {
+         transform: translateY(-20%);
+         stroke: $secondary-color;
+         transition: all 0.5s ease;
+      }
+   }
+}
+
+.fixed-right {
+   position: fixed;
+   top: 50%;
+   right: -5rem;
+   transform: rotate(-90deg);
+	transition: all 0.5s ease;
+	@include media("<=laptop") {
+		right: -4rem;
+	}
+	@include media("<=tablet") {
+		display: none;
+	}
+   a {
+      &:hover {
+         transition: all 0.5s ease;
+         color: $secondary-color;
+      }
+   }
+}

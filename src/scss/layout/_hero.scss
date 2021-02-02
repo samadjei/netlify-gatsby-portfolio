@@ -1,0 +1,103 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.no-pt {
+  padding-top: 0rem;
+}
+
+.hero {
+  min-height: calc(80vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $primary-color;
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media("<=tablet") {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    flex: 2;
+    margin-right: 30rem;
+    max-width: 53rem;
+
+    @include media("<=desktop") {
+      margin-right: 3rem;
+    }
+    @include media("<=tablet") {
+      margin-bottom: 7rem;
+      text-align: center;
+    }
+  }
+
+  &--title {
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  &--desc {
+    color: $white;
+    margin-bottom: $m-bottom-l;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
+
+.profile {
+  flex: 1;
+  &--photo {
+    width: 40rem;
+	 height: 100%;
+	//  z-index: 1;
+    @include media("<=desktop") {
+      width: 25rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Wave
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
