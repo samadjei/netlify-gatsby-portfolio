@@ -76,14 +76,7 @@ img {
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: $site-padding-m;
-  @include media("<=tablet") {
-    padding: $site-padding-ms;
-  }
-  @include media("<=phone") {
-    padding: $site-padding-s;
-    padding-bottom: 10rem;
-  }
+  padding: $site-padding;
 }
 
 .title {
@@ -92,6 +85,9 @@ img {
   text-transform: capitalize;
   color: $primary-color;
   padding-bottom: $p-bottom-xl;
+  //   @include media("<=tablet") {
+  //     font-size: 1.75rem;
+  //   }
 }
 
 .link {
