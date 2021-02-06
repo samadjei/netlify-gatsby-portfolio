@@ -42,17 +42,6 @@
   }
 }
 
-.underline {
-  background-image: linear-gradient(120deg, rgb(114, 114, 114) 0%, $white 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-  &:hover {
-    background-size: 100% 88%;
-  }
-}
-
 // Stack
 .stack {
   margin-top: 2rem;
