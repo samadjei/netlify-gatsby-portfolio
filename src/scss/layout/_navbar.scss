@@ -13,11 +13,11 @@
 
 .navbar {
   background: $primary-color;
-  height: 80px;
+  //   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   position: sticky;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -42,12 +42,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    @include media(">=desktop") {
-      padding: 0 8rem;
-    }
     padding: 0 4rem;
+    @include media(">=desktop") {
+      padding: 0 10rem;
+    }
 
-    height: 8rem;
+    height: 10rem;
   }
 
   &__links {
@@ -77,9 +77,9 @@
   overflow: hidden;
 
   &--links {
-    font-weight: 500;
     position: relative;
     color: $white;
+    font-size: 2rem;
     @include media(">=tablet") {
       &::after {
         content: "";
@@ -111,7 +111,7 @@
 }
 
 #cta {
-  font-size: 1.6rem;
+  font-size: 2rem;
   @include media("<=tablet") {
     display: none;
   }
@@ -147,6 +147,7 @@
     //  transform: translateX(100%);
     opacity: 1;
     transition: all 0.5s ease;
+    overflow: hidden;
 
     &.active {
       display: flex;

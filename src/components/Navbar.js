@@ -11,6 +11,16 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
+  componentDidMount() {
+    if (this.state.clicked) {
+      document.body.style.overflow = "hidden"
+    }
+  }
+
+  componentWillUnmount() {
+    document.body.style.overflow = "visible"
+  }
+
   render() {
     return (
       <>
