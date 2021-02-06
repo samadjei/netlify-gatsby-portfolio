@@ -8,7 +8,7 @@ import Launch from "../assets/svg/services/launch.svg"
 
 const Services = ({ title }) => {
   return (
-    <section className="services">
+    <section className="services container">
       <Title title={title} className="title" />
       <div className="services__grid">
         <div className="services__content">

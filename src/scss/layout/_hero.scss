@@ -2,21 +2,13 @@
 @import "../abstracts/variables";
 @import "../abstracts/breakpoints";
 
-.no-pt {
-  padding-top: 0rem;
-}
-
-.hero__container {
-	padding: 5rem 2.5rem;
-	@include container;
-}
-
 .hero {
   min-height: calc(100vh - 10rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: $primary-color;
+  padding: $site-padding;
 
   &__grid {
     display: flex;

@@ -19,7 +19,7 @@ const Hero = () => {
   `)
   return (
     <section className="hero">
-      <div className="hero__container">
+      <div className="container">
         <div className="hero__grid">
           <div className="hero__content">
             <h1 className="hero--title hero--white-text">

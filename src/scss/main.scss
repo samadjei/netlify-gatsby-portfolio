@@ -76,7 +76,6 @@ img {
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: $site-padding;
 }
 
 .title {
@@ -85,9 +84,9 @@ img {
   text-transform: capitalize;
   color: $primary-color;
   padding-bottom: $p-bottom-xl;
-  //   @include media("<=tablet") {
-  //     font-size: 1.75rem;
-  //   }
+    @include media("<=tablet") {
+      font-size: 1.75rem;
+    }
 }
 
 .link {
