@@ -10,7 +10,7 @@ const BlogTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <div className="container">
+      <div className="template container">
         <SEO title={title} description={desc} />
         <section className="blog-template">
           <div className="section-center">
