@@ -45,11 +45,10 @@ const About = () => {
           <div className="about__content">
             <p className="about__content--info">
               Hey there! I'm Samuel, a freelance web developer from Slough, UK.
-              I've been making websites since 2018 as a hobby since 2018 and
-              have only recently decided to turn that into a profession. Over
-              this time, i have have fallen in love with web development and
-              design which has pushed me to strive to continuosly imporve my
-              skillset.
+              I've been making websites since 2018 as a hobby and have decided
+              to turn that into a profession. Over this time, i have have fallen
+              in love with web development and design which has pushed me to
+              strive to create the best quality websites posisble.
             </p>
             <p className="about__content--info">
               I am currently in my 3rd year as a UWE (Universoty of the West of
@@ -58,10 +57,13 @@ const About = () => {
               worlds in my opinion.
             </p>
             <p className="about__content--info">
-              In my spare time, if i'm not hanging out with friends, you'll
-              probably catch my in the gym, playing video games or watching
-              anime. I am what some people might call a nerd haha.
+              Being a self-taught developer, i have taken the time to learn the
+              latest web technologies have available which will allow me to
+              design and create the most modern and performante site possible. I
+              enjoy learning and challenging myself when it comes to building
+              website / web applications.
             </p>
+
             <div className="about-img">
               <Img
                 className="about--photo"
@@ -69,11 +71,9 @@ const About = () => {
               />
             </div>
             <p className="about__content--info">
-              Being a self-taught developer, i have taken the time to learn the
-              latest web technologies have available which will allow me to
-              design and create the most modern and performante site possible. I
-              enjoy learning and challenging myself when it comes to building
-              website / web applications.
+              In my spare time, if i'm not hanging out with friends, you'll
+              probably catch my in the gym, playing video games or watching
+              anime.
             </p>
             <div className="stack">
               <h4>Here are my current tech stack:</h4>

@@ -60,7 +60,7 @@ const Hero = () => {
                 </p>
               </ul>
             </div>
-            <a href="#hire">
+            <a href="#contact">
               <Button
                 className="btn"
                 buttonStyle="btn--outline"

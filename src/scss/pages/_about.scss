@@ -10,7 +10,6 @@
   padding: $site-padding;
 
   &__content {
-    padding-top: $p-top-l;
     max-width: 50rem;
 
     &--text {
@@ -39,10 +38,6 @@
     border-radius: 5px;
     width: 20rem;
     height: 100%;
-
-   //  @include media("<=laptop") {
-   //    width: 25rem;
-   //  }
   }
 }
 

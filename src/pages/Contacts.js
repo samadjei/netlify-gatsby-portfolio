@@ -3,10 +3,11 @@ import Layout from "../components/Layout"
 import Title from "../components/Title"
 import SEO from "../components/SEO"
 
+
 const Contacts = () => {
   return (
     <Layout>
-      <section id="hire" className="container">
+      <section className="contacts container">
         <Title title={"Contact Me"} className="contact--title" />
         <SEO title="Contact" />
         <p className="contact--sub">
