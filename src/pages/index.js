@@ -8,6 +8,7 @@ import MoreInfo from "../components/MoreInfo"
 import Contact from "../components/Contact"
 import SEO from "../components/SEO"
 import Blogs from "../components/Blogs"
+// import Testimonials from "../components/Testimonials"
 
 export default ({ data }) => {
   const {
@@ -22,6 +23,7 @@ export default ({ data }) => {
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Samuel Adjei as your developer?" />
       <Project projects={projects} title="See my work" showLink />
+      {/* <Testimonials title="What others say about me" /> */}
       <Contact title="Let's get connected" />
       <Blogs blogs={blogs} title="Latest Blog Posts" showLink />
     </Layout>

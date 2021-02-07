@@ -20,10 +20,11 @@ const MoreInfo = ({ title }) => {
         </li>
         <li className="hire--reasons">
           <span>4.</span> I am reliable, transparent, and a good communicator,
-          ensuring the project runs as smoothly as possible. Don't beleive me?
-          <a href="#testimonials" className="underline">
+          ensuring the project runs as smoothly as possible. 
+			 {/* Don't beleive me? */}
+          {/* <a href="#testimonials" className="underline">
             See what others have to say.
-          </a>
+          </a> */}
         </li>
         <li className="hire--reasons">
           <span>5.</span> Available for future work once the scope of your

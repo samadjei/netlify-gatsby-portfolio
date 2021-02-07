@@ -24,22 +24,22 @@ const Footer = () => {
             <ul>
               <h3 className="footer--titles white">Quick Links</h3>
               <li className="footer--links">
-                <Link className="white" to="/">
+                <Link className="white" to="/Work">
                   Work
                 </Link>
               </li>
               <li className="footer--links">
-                <Link className="white" to="/">
+                <Link className="white" to="/About">
                   About
                 </Link>
               </li>
               <li className="footer--links">
-                <Link className="white" to="/">
+                <Link className="white" to="/Blog">
                   Blog
                 </Link>
               </li>
               <li className="footer--links">
-                <Link className="white" to="/">
+                <Link className="white" to="/Contacts">
                   Contact
                 </Link>
               </li>

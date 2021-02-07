@@ -36,7 +36,7 @@ const About = () => {
   `)
   return (
     <Layout>
-      <div className="about container">
+      <div className="about">
         <SEO title="About" />
         <div className="about-me">
           <Title className="about-title" title="About Samuel Adjei" />

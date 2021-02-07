@@ -3,7 +3,11 @@
 @import "../abstracts/breakpoints";
 
 .about {
+  width: 50rem;
+  max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+  padding: $site-padding;
 
   &__content {
     padding-top: $p-top-l;
@@ -31,14 +35,14 @@
     top: 3rem;
   }
 
-  &__photo {
+  &--photo {
     border-radius: 5px;
-    width: 30rem;
+    width: 20rem;
     height: 100%;
 
-    @include media("<=laptop") {
-      width: 25rem;
-    }
+   //  @include media("<=laptop") {
+   //    width: 25rem;
+   //  }
   }
 }
 
