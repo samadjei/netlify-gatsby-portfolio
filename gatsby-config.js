@@ -2,7 +2,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Freelance Web Developer",
-    description: "Portfolio site by Sam Adjei",
+    description: "Sam Adjei Web Developer",
     author: "Sam Adjei",
     twitterUsername: "@samkadjei",
     image: "/twitter-img.png",
@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
