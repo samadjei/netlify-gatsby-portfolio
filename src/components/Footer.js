@@ -62,6 +62,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href="https://twitter.com/samkadjei"
                 alt="twitter link"
+					 aria-label="Twitter"
               >
                 <FiTwitter className="socials--inner white" />
               </a>
@@ -71,6 +72,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href=" www.linkedin.com/in/samuel-adjei"
                 alt="linkedin link"
+					 aria-label="LinkedIn"
               >
                 <FiLinkedin className="socials--inner white" />
               </a>
@@ -80,6 +82,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/samadjeiltd/"
                 alt="instagram link"
+					 aria-label="Instagram"
               >
                 <FiInstagram className="socials--inner" />
               </a>

@@ -66,9 +66,9 @@ class Navbar extends Component {
                       Contact
                     </Link>
                   </li>
-                  <div className="nav-icons">
+                  <li className="nav-icons">
                     <SocialLinks />
-                  </div>
+                  </li>
                 </ul>
               </div>
               <Link id="cta" to="/Contacts">

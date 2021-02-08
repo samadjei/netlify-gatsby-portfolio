@@ -5,7 +5,13 @@ import Image from "gatsby-image"
 const Project = ({ image, url }) => {
   return (
     <section className="project">
-      <a target="_blank" rel="noreferrer" alt="project images" href={url}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        alt="project images"
+        aria-label="Project images"
+        href={url}
+      >
         {image && (
           <Image fluid={image.childImageSharp.fluid} className="project__img" />
         )}
