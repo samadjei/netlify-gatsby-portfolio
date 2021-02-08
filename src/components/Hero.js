@@ -35,7 +35,7 @@ const Hero = () => {
               businesses gain exposure to potential clients.
             </p>
             <div className="hero__list">
-              <h3 className="hero--white-text">If you're looking for:</h3>
+              <h3 className="hero__list--sub hero--white-text">If you're looking for:</h3>
               <ul className="hero__listings">
                 <li className="hero--l hero--white-text">
                   <span>

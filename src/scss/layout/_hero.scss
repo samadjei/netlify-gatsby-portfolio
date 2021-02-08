@@ -22,8 +22,8 @@
 
   &__content {
     flex: 2;
-    margin-right: 20rem;
-    max-width: 56rem;
+    margin-right: 10rem;
+    max-width: 60rem;
     text-align: left;
 
     @include media("<=desktop") {
@@ -37,6 +37,9 @@
 
   &__list {
     padding-bottom: 4rem;
+	 &--sub {
+		 font-size: 1.8rem;
+	 }
   }
 
   &__listings {
@@ -50,7 +53,7 @@
   &--title {
     text-transform: capitalize;
     margin-top: 0rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     @include media(">=desktop") {
       font-size: 4.5rem;
     }
@@ -63,6 +66,7 @@
     margin-bottom: $m-bottom-l;
     line-height: 1.5;
     letter-spacing: 1px;
+	 font-size: 1.75rem;
   }
 
   &--l {
