@@ -37,9 +37,12 @@
 
   &__list {
     padding-bottom: 4rem;
-	 &--sub {
-		 font-size: 1.8rem;
-	 }
+    @include media(">=laptop") {
+      padding-bottom: 8rem;
+    }
+    &--sub {
+      font-size: 1.8rem;
+    }
   }
 
   &__listings {
@@ -48,6 +51,7 @@
 
   &--white-text {
     color: $white;
+    font-size: 1.65rem;
   }
 
   &--title {
@@ -66,7 +70,7 @@
     margin-bottom: $m-bottom-l;
     line-height: 1.5;
     letter-spacing: 1px;
-	 font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   &--l {

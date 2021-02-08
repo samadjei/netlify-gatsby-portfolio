@@ -17,12 +17,12 @@ const Contact = ({ title }) => {
           data-netlify="true"
           onSubmit="submit"
         >
-          <input type="hidden" name="form-name" value="contact v1" />
+          <input type="hidden" id="name" value="contact v1" />
           <div className="contact__info">
             <label for="name" className="label" htmlFor="name">
               Name
             </label>
-            <input type="text" name="name" placeholder="John Doe" />
+            <input type="text" id="name" placeholder="John Doe" />
           </div>
           <div className="contact__info">
             <label for="email" className="label" htmlFor="email">
@@ -40,6 +40,7 @@ const Contact = ({ title }) => {
               Message
             </label>
             <textarea
+              id="message"
               name="message"
               rows="5"
               required="required"

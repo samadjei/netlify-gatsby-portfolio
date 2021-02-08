@@ -13,16 +13,20 @@ const Footer = () => {
             <h4 className="footer--subhead white">
               Freelance Web Designer & Developer
             </h4>
-            <p className="white">
+            <p className=" footer--info white">
               I'm a Freelance Web Developer based in Slough. I work remotely,
               providing web developer/design services to businesses around the
               UK. If you have an upcoming project you'd like to discuss, please
-              get in <Link to="/Contact">touch</Link>{" "}
+              get in{" "}
+              <Link className="underline white" to="/Contacts">
+                touch
+              </Link>
+              .
             </p>
           </div>
           <div className="footer__center">
+            <h3 className="footer--titles white">Quick Links</h3>
             <ul>
-              <h3 className="footer--titles white">Quick Links</h3>
               <li className="footer--links">
                 <Link className="white" to="/Work">
                   Work
@@ -57,6 +61,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://twitter.com/samkadjei"
+                alt="twitter link"
               >
                 <FiTwitter className="socials--inner white" />
               </a>
@@ -65,6 +70,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href=" www.linkedin.com/in/samuel-adjei"
+                alt="linkedin link"
               >
                 <FiLinkedin className="socials--inner white" />
               </a>
@@ -73,6 +79,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/samadjeiltd/"
+                alt="instagram link"
               >
                 <FiInstagram className="socials--inner" />
               </a>

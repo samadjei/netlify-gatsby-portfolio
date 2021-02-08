@@ -14,13 +14,22 @@
     margin-bottom: 0.75rem;
   }
 
+  &--info {
+    line-height: 1.3;
+  }
+
   //   !sort this out
   &--subhead {
     color: $text;
+    margin-bottom: 0.5rem;
   }
 
   &--links {
     padding: 5px 0;
+  }
+
+  &--contact-link {
+    color: $secondary-color;
   }
 
   &__container {

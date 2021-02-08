@@ -11,7 +11,8 @@ function socialLinks() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/samadjei"
+				  href="https://github.com/samadjei"
+				  alt="github link"
         >
           <FiGithub className="social-item" />
         </a>
@@ -20,7 +21,8 @@ function socialLinks() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href=" www.linkedin.com/in/samuel-adjei"
+				  href=" www.linkedin.com/in/samuel-adjei"
+				  alt="linkedin link"
         >
           <FiLinkedin className="social-item" />
         </a>
@@ -30,6 +32,7 @@ function socialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.instagram.com/samadjeiltd/"
+			 alt="instagram link"
         >
           <FiInstagram className="social-item" />
         </a>
@@ -39,6 +42,7 @@ function socialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/samkadjei"
+			 alt="twitter link"
         >
           <FiTwitter className="social-item" />
         </a>

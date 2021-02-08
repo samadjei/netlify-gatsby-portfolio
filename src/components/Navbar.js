@@ -62,9 +62,6 @@ class Navbar extends Component {
                     </Link>
                   </li>
                   <li className="menu__item">
-                    {/* <a className="menu--links-mobile" href="#hire">
-                      Contact
-                    </a> */}
                     <Link to="/Contact" className="menu--links-mobile">
                       Contact
                     </Link>

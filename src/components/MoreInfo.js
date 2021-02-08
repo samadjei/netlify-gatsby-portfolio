@@ -22,7 +22,7 @@ const MoreInfo = ({ title }) => {
           <span>4.</span> I am reliable, transparent, and a good communicator,
           ensuring the project runs as smoothly as possible. 
 			 {/* Don't beleive me? */}
-          {/* <a href="#testimonials" className="underline">
+          {/* <a href="#testimonials" className="underline" alt="testimonials link">
             See what others have to say.
           </a> */}
         </li>

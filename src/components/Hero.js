@@ -35,7 +35,9 @@ const Hero = () => {
               businesses gain exposure to potential clients.
             </p>
             <div className="hero__list">
-              <h3 className="hero__list--sub hero--white-text">If you're looking for:</h3>
+              <h3 className="hero__list--sub hero--white-text">
+                If you're looking for:
+              </h3>
               <ul className="hero__listings">
                 <li className="hero--l hero--white-text">
                   <span>
@@ -55,12 +57,12 @@ const Hero = () => {
                     Build you a fast and responsive site for your new business
                   </span>
                 </li>
+              </ul>
                 <p className="hero--sub hero--white-text">
                   You've come to the right place, scroll down to see more.
                 </p>
-              </ul>
             </div>
-            <a href="#contact">
+            <a href="#contact" alt="contact link">
               <Button
                 className="btn"
                 buttonStyle="btn--outline"
