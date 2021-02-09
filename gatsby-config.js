@@ -2,10 +2,10 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Freelance Web Developer",
-    description: "Sam Adjei Web Developer",
+    description: "Web Developer",
     author: "Sam Adjei",
     twitterUsername: "@samkadjei",
-    image: "/twitter-img.png",
+    image: "static/twitter-img.png",
     siteUrl: "https://www.samadjei.com",
   },
   plugins: [
