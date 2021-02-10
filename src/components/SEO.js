@@ -36,6 +36,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
+	 
   )
 }
 export default SEO
