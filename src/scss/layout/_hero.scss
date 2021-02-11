@@ -96,6 +96,7 @@
   &--photo {
     width: 30rem;
     margin-right: auto;
+	 border-radius: 5px;
     @include media(">=desktop") {
       width: 40rem;
       height: 100%;

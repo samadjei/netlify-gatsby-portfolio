@@ -23,21 +23,19 @@ const Hero = () => {
         <div className="hero__grid">
           <div className="hero__content">
             <h1 className="hero--title hero--white-text">
-              Freelance web designer & developer
+              Freelance web developer
             </h1>
             <p className="hero--desc hero--white-text">
               Hey there,
               <span role="img" aria-label="hand wave" class="wave">
                 👋🏾
               </span>
-              i’m Samuel, a freelance web developer based in Slough who is
+              i’m Samuel, a freelance web developer with 3+ years of experience
               focused on building bespoke and professional websites to help
-              businesses gain exposure to potential clients.
+              businesses gain exposure online.
             </p>
             <div className="hero__list">
-              <h2 className="hero__list--sub">
-                If you're looking for:
-              </h2>
+              <h2 className="hero__list--sub">If you're looking for:</h2>
               <ul className="hero__listings">
                 <li className="hero--l hero--white-text">
                   <span>
@@ -58,9 +56,9 @@ const Hero = () => {
                   </span>
                 </li>
               </ul>
-                <p className="hero--sub hero--white-text">
-                  You've come to the right place, scroll down to see more.
-                </p>
+              <p className="hero--sub hero--white-text">
+                You've come to the right place, scroll down to see more.
+              </p>
             </div>
             <a href="#contact" alt="contact link">
               <Button
