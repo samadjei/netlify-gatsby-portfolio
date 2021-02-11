@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,6 +47,17 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SamAdjei`,
+        short_name: `SamAdjei`,
+        start_url: `/`,
+        background_color: `#FFFFFE`,
+        theme_color: `#1b262c`,
+        display: `standalone`,
+        icon: `src/assets/favicon-32x32.png`,
+      },
+    },
   ],
 }
