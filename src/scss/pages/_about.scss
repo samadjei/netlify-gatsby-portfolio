@@ -3,14 +3,14 @@
 @import "../abstracts/breakpoints";
 
 .about {
-  width: 50rem;
+  width: 768px;
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: $site-padding;
 
   &__content {
-    max-width: 50rem;
+    max-width: 768px;
 
     &--text {
       padding-top: $p-top-m;
@@ -61,3 +61,8 @@
     font-size: 1.5rem;
   }
 }
+
+.about__contact {
+	margin-left: -1rem;
+}
+

@@ -16,73 +16,6 @@
   padding: $site-padding;
 }
 
-// .blog {
-//   display: block;
-//   margin-bottom: 2rem;
-//   background: $white;
-//   border-radius: 5px;
-//   box-shadow: $light-shadow;
-//   width: 100%;
-//   transition: all 0.5s ease-in-out;
-//   &:hover {
-//     box-shadow: $dark-shadow;
-//     transform: scale(1.02);
-//   }
-
-//   &__img {
-//     border-top-left-radius: 5px;
-//     border-top-right-radius: 5px;
-//     height: 15rem;
-
-//     @include media("<=laptop") {
-//       height: 13.75rem;
-//     }
-//   }
-//   &__layout {
-//     height: 100%;
-//     display: grid;
-//     grid-template-rows: auto 1fr;
-//   }
-//   &__card {
-//     display: grid;
-//     grid-template-rows: auto 1fr auto;
-//     padding: 1.5rem 1rem;
-//   }
-//   &--title {
-//     color: $primary-color;
-//   }
-//   &__footer {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-top: 2rem;
-//   }
-//   &--category {
-//     display: inline-block;
-//     background: $secondary-color;
-//     color: $white;
-//     margin-right: 0.5rem;
-//     padding: 0.5rem 0.75rem;
-//     border-radius: 2.75px;
-//     text-transform: uppercase;
-//     letter-spacing: 2px;
-//     font-size: 0.85rem;
-//     margin-bottom: 0;
-//     font-weight: bold;
-//   }
-// }
-
-// @media screen and (min-width: 576px) {
-//   .blogs-center {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-//     column-gap: 2rem;
-//   }
-//   .blog__img {
-//     height: 17.5rem;
-//   }
-// }
-
 .front__blog {
   max-width: 96rem;
   margin: 0 auto;
@@ -107,4 +40,44 @@
       }
     }
   }
+}
+
+.blog__template {
+  max-width: 84rem;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 8rem;
+  h2,
+  h3,
+  h4,
+  p {
+    line-height: 1.5;
+    letter-spacing: 0.75px;
+    padding: 1rem 0;
+  }
+
+  img {
+    margin: 2.5rem 0;
+    width: 40rem;
+  }
+}
+
+.template {
+  &__links {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+	 grid-gap: 2rem;
+  }
+  &__lists {
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+  }
+}
+
+.blogs--inner {
+  display: inline-block;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: 1rem;
 }

@@ -51,10 +51,18 @@ const About = () => {
               strive to create the best quality websites posisble.
             </p>
             <p className="about__content--info">
-              I am currently in my 3rd year as a UWE (Universoty of the West of
-              England) studying ITMB. It's a great course which gives students a
-              50/50 between between Business Management and IT, the best of both
-              worlds in my opinion.
+              I am currently in my 3rd year as a UWE (University of the West of
+              England) studying{" "}
+              <a className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tpdegrees.com/degrees/courses-placements-jobs/universities-list-itmb/"
+                alt="ITMB Link"
+              >
+                ITMB
+              </a>
+              . It's a great course which gives students a 50/50 between between
+              Business Management and IT, the best of both worlds in my opinion.
             </p>
             <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
