@@ -11,16 +11,6 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
-  componentDidMount() {
-    if (this.state.clicked) {
-      document.body.style.overflow = "hidden"
-    }
-  }
-
-  componentWillUnmount() {
-    document.body.style.overflow = "visible"
-  }
-
   render() {
     return (
       <>
@@ -43,7 +33,6 @@ class Navbar extends Component {
                   <span class="hamburger-inner"></span>
                 </span>
               </button>
-
               <div className="navbar__menus">
                 <ul className={this.state.clicked ? "menu active" : "menu"}>
                   <li className="menu__item">
@@ -62,7 +51,7 @@ class Navbar extends Component {
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <Link to="/Contact" className="menu--links-mobile">
+                    <Link to="/Contacts" className="menu--links-mobile">
                       Contact
                     </Link>
                   </li>
