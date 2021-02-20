@@ -2,8 +2,11 @@
 @import "../abstracts/variables";
 @import "../abstracts/breakpoints";
 
+.contacts {
+  max-width: 60rem;
+}
 .contact {
-  max-width: 50rem;
+  max-width: 60rem;
   width: 100%;
   min-height: 20rem;
   padding: 4rem;
@@ -58,5 +61,50 @@ textarea {
 }
 
 .find-me {
-	padding-top: 5rem;
+  padding-top: 5rem;
+}
+
+.options--title {
+  margin-bottom: 2rem;
+}
+
+.form__business {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: center;
+  align-items: stretch;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card-input-element {
+  display: none;
+}
+
+.panels {
+  display: flex;
+  align-items: center;
+}
+
+.card-input {
+  padding: 2rem;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  height: 100%;
+  font-size: 1.5rem;
+
+  &:hover {
+    box-shadow: $dark-shadow;
+  }
+}
+
+.card-input:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+  border: 2px solid $secondary-color;
+  box-shadow: $dark-shadow;
 }
