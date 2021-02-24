@@ -2,13 +2,21 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Freelance Web Developer",
-    description: "Web Developer",
+    description: "Freelance Web Developer",
     author: "Samuel Adjei",
     twitterUsername: "@samkadjei",
     image: "static/twitter-img.png",
     siteUrl: "https://samadjei.com",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-190572861-1",
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
