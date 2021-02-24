@@ -3,10 +3,10 @@ module.exports = {
   siteMetadata: {
     title: "Freelance Web Developer",
     description: "Web Developer",
-    author: "Sam Adjei",
+    author: "Samuel Adjei",
     twitterUsername: "@samkadjei",
     image: "static/twitter-img.png",
-    siteUrl: "https://www.samadjei.com",
+    siteUrl: "https://samadjei.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
