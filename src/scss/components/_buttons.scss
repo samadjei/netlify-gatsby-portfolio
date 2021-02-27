@@ -5,7 +5,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: #016795;
+  background-color: $primary-color;
   color: #fff;
   border-radius: 5px;
   &:hover {
@@ -14,7 +14,7 @@
 }
 
 .btn--primary {
-  background-color: white;
+  background-color: $white;
 }
 
 .btn--outline {

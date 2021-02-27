@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  background: $primary-color;
+  //   background: $primary-color;
   //   height: 90px;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
   &--logo {
     z-index: 9;
     h3 {
-      color: $white;
+      // color: $white;
     }
   }
 
@@ -68,7 +68,7 @@
 
   &--links {
     position: relative;
-    color: $white;
+    //  color: $white;
     font-size: 2rem;
     @include media(">=tablet") {
       &::after {
@@ -140,7 +140,7 @@
 
     &.active {
       display: flex;
-      background: $secondary-color;
+      background: $white;
       right: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -153,9 +153,9 @@
       width: 30%;
       margin: 0 auto;
       display: table;
-      color: $white;
+      color: $text;
       transition: all 0.5s ease;
-      font-size: 3rem;
+      font-size: 2.5rem;
 
       &:hover {
         color: $text;
@@ -167,14 +167,14 @@
         text-align: center;
         margin: 2rem auto;
         border-radius: 4px;
-        width: 50%;
+        width: 40%;
         text-decoration: none;
-        font-size: 3rem;
+        font-size: 2.5rem;
         background-color: transparent;
-        color: #fff;
+        color: $text;
         padding: 14px 25px;
-        border: 1px solid #fff;
-        transition: all 0.5s ease;
+        border: 1px solid $text;
+        transition: all 0.3s ease-out;
 
         &:hover {
           background: #fff;
@@ -202,7 +202,7 @@
     display: inline-block;
     transition: all 0.5s ease;
     &:hover {
-      color: $white;
+      // color: $white;
       transform: translate(0, -8px);
     }
     width: 3.25rem;

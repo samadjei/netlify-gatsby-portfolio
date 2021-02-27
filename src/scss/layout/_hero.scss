@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $primary-color;
+  //   background: $primary-color;
   padding: 5rem 2rem;
 
   &__grid {
@@ -42,8 +42,7 @@
     }
     &--sub {
       font-size: 1.8rem;
-		color: $white;
-
+      // color: $white;
     }
   }
 
@@ -52,7 +51,7 @@
   }
 
   &--white-text {
-    color: $white;
+    //  color: $white;
     font-size: 1.65rem;
   }
 
@@ -83,8 +82,11 @@
   }
 
   &--check {
-    color: $secondary-color;
+    display: inline-block;
+    color: #267b70;
+    font-size: 2rem;
     margin-right: 0.5rem;
+    margin-bottom: -0.65rem;
   }
 
   &--sub {
@@ -96,7 +98,7 @@
   &--photo {
     width: 30rem;
     margin-right: auto;
-	 border-radius: 5px;
+    border-radius: 5px;
     @include media(">=desktop") {
       width: 40rem;
       height: 100%;

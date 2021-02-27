@@ -52,7 +52,7 @@ html {
 
 body {
   font-family: "Rubik", "Open Sans", sans-serif;
-  background: #fffffe;
+  background: $white;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -85,9 +85,9 @@ img {
   text-transform: capitalize;
   color: $primary-color;
   padding-bottom: $p-bottom-xl;
-    @include media("<=tablet") {
-      font-size: 1.75rem;
-    }
+  @include media("<=tablet") {
+    font-size: 1.75rem;
+  }
 }
 
 .link {
