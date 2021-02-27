@@ -1,27 +1,14 @@
 import React from "react"
 import Title from "./Title"
 
-import Design from "../assets/svg/services/design.svg"
-import Develop from "../assets/svg/services/develop.svg"
-import SEO from "../assets/svg/services/seo.svg"
-import Launch from "../assets/svg/services/launch.svg"
-
 const Services = ({ title }) => {
   return (
     <section className="services container">
       <Title title={title} className="title" />
       <div className="services__grid">
         <div className="services__content">
-          <div className="icon">
-            <img
-              width="200"
-              height="200"
-              className="icon--size"
-              src={Design}
-              alt="Design"
-            />
-          </div>
-          <div className="services__details">
+          <div>
+            <span>0.1</span>
             <h3>Web Design</h3>
             <p>
               I will use your feedback upon our conversation to provide you with
@@ -31,16 +18,9 @@ const Services = ({ title }) => {
           </div>
         </div>
         <div className="services__content">
-          <div className="icon">
-            <img
-              width="200"
-              height="200"
-              className="icon--size"
-              src={Develop}
-              alt="Design"
-            />
-          </div>
           <div>
+            <span>0.2</span>
+
             <h3>Web Development</h3>
             <p>
               Up an agreed design, i will develop the website with the latest
@@ -50,16 +30,9 @@ const Services = ({ title }) => {
           </div>
         </div>
         <div className="services__content">
-          <div className="icon">
-            <img
-              width="200"
-              height="200"
-              className="icon--size"
-              src={SEO}
-              alt="Design"
-            />
-          </div>
           <div>
+            <span>0.3</span>
+
             <h3>SEO</h3>
             <p>
               Good SEO is an intergral part of any online business to generate
@@ -69,16 +42,8 @@ const Services = ({ title }) => {
           </div>
         </div>
         <div className="services__content">
-          <div className="icon">
-            <img
-              width="200"
-              height="200"
-              className="icon--size"
-              src={Launch}
-              alt="Design"
-            />
-          </div>
           <div>
+            <span>0.4</span>
             <h3>Content Management</h3>
             <p>
               I will provide you with the means of managing the content of your
