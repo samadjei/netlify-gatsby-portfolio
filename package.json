@@ -7,7 +7,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "body-scroll-lock": "^3.1.5",
-    "gatsby": "^2.32.3",
+    "gatsby": "^2.32.8",
     "gatsby-image": "^2.9.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.0",
