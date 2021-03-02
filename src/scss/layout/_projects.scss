@@ -3,9 +3,8 @@
 @import "../abstracts/breakpoints";
 
 .project {
-  padding: $site-padding;
+  padding: 1.5rem 2.5rem;
 }
-
 .project-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));

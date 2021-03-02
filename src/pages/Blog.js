@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import PropTypes from "prop-types"
+
 
 const Blog = ({
   data: {
@@ -18,6 +20,14 @@ const Blog = ({
     </Layout>
   )
 }
+
+Blog.propTypes = {
+	id: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	date: PropTypes.string.isRequired,
+	slug: PropTypes.string.isRequired,
+ }
+ 
 
 export const query = graphql`
   {
