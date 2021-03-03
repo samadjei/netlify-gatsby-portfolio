@@ -7,11 +7,13 @@ const Blog = ({ id, title, date, desc, slug }) => {
     <Link to={`/blogs/${slug}`} className="blog" key={id}>
       <article>
         <div className="blog__card">
-          <h4>{title}</h4>
-          <p>{desc}</p>
+          <div>
+            <h3>{title}</h3>
+            <p className="blog-desc">{desc}</p>
+          </div>
           <div className="blog__footer">
-            <p className="blog__footer--category">{date}</p>
-            <p>{date}</p>
+            <p className="blog-category">{date}</p>
+            <p className="blog-date">{date}</p>
           </div>
         </div>
       </article>
