@@ -5,7 +5,6 @@ import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
 import PropTypes from "prop-types"
 
-
 const Blog = ({
   data: {
     allStrapiBlogs: { nodes: blogs },
@@ -22,12 +21,12 @@ const Blog = ({
 }
 
 Blog.propTypes = {
-	id: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired,
-	date: PropTypes.string.isRequired,
-	slug: PropTypes.string.isRequired,
- }
- 
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+}
 
 export const query = graphql`
   {
@@ -39,6 +38,7 @@ export const query = graphql`
         date(formatString: "DD MMM, YYYY")
         id
         title
+        category
       }
     }
   }

@@ -56,6 +56,7 @@ export const query = graphql`
         date(formatString: "DD MMM, YYYY")
         id
         title
+        category
       }
     }
   }
