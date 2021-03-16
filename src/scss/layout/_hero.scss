@@ -22,7 +22,6 @@
   &__content {
     flex: 2;
     margin-right: 10rem;
-    max-width: 60rem;
     text-align: left;
 
     @include media("<=desktop") {
@@ -55,9 +54,10 @@
   &--title {
     text-transform: capitalize;
     margin-top: 0rem;
+	 margin-bottom: 1rem;
     font-size: 3.5rem;
     @include media(">=desktop") {
-      font-size: 4.75rem;
+      font-size: 6rem;
     }
     @include media("<=tablet") {
       font-size: 3rem;
@@ -68,6 +68,8 @@
     margin-bottom: $m-bottom-l;
     line-height: 1.5;
     font-size: 1.75rem;
+    max-width: 60rem;
+
   }
 
   &--l {
@@ -94,7 +96,6 @@
   &--photo {
     width: 30rem;
     margin-right: auto;
-    border-radius: 5px;
     @include media(">=desktop") {
       width: 40rem;
       height: 100%;
@@ -104,6 +105,16 @@
 
     @include media("<=tablet") {
       width: 25rem;
+		margin: 0 auto;
+    }
+  }
+
+  &--caption {
+	  opacity: 0.6;
+	  font-size: 1.4rem;
+	  margin-top: 1rem;
+	  @include media("<=tablet") {
+      font-size: 1.2rem;
     }
   }
 }

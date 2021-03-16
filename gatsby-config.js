@@ -9,14 +9,6 @@ module.exports = {
     siteUrl: "https://samadjei.com",
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-190572861-1",
-        head: true,
-        anonymize: true,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
@@ -47,7 +39,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Rubik",
+              family: "Poppins",
               variants: ["400", "600"],
             },
             { family: "Open Sans" },
@@ -61,7 +53,7 @@ module.exports = {
         name: `SamAdjei`,
         short_name: `SamAdjei`,
         start_url: `/`,
-        background_color: `#FFFFFE`,
+        background_color: `#FFFFFF`,
         theme_color: `#1b262c`,
         display: `standalone`,
         icon: `src/assets/favicon-32x32.png`,

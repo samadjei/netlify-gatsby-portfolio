@@ -30,8 +30,8 @@ const Hero = () => {
               <span role="img" aria-label="hand wave" class="wave">
                 👋🏾
               </span>
-              i’m Samuel, a freelance web developer with 3+ years of experience
-              focused on building bespoke and professional websites to help
+              i’m Samuel, a freelance web developer with 3+ years of experience 
+              building bespoke and professional websites with the latest web technologies such as WordPress and React to help
               businesses gain exposure online.
             </p>
             <div className="hero__list">
@@ -52,7 +52,7 @@ const Hero = () => {
                 <li className="hero--l hero--white-text">
                   <span>
                     <FiCheck className="hero--check" />
-                    Build you a fast and responsive site for your new business
+                    A fast and responsive site for your new business
                   </span>
                 </li>
               </ul>
@@ -74,7 +74,8 @@ const Hero = () => {
             <Image
               className="profile--photo"
               fluid={data.profile.childImageSharp.fluid}
-            />
+					  />
+					  <figcaption className="profile--caption">Freelance Web Developer, Samuel Adjei</figcaption>
           </div>
         </div>
       </div>

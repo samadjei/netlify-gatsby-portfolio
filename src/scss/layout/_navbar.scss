@@ -22,9 +22,6 @@
 
   &--logo {
     z-index: 9;
-    h3 {
-      // color: $white;
-    }
   }
 
   &__container {
@@ -36,7 +33,6 @@
     @include media(">=desktop") {
       padding: 0 10rem;
     }
-
     height: 10rem;
   }
 
@@ -132,7 +128,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 10px;
     right: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -167,7 +163,7 @@
         text-align: center;
         margin: 2rem auto;
         border-radius: 4px;
-        width: 40%;
+        width: 50%;
         text-decoration: none;
         font-size: 2.5rem;
         background-color: transparent;
