@@ -50,14 +50,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `SamAdjei`,
+        name: `Sam-Adjei`,
         short_name: `SamAdjei`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#1b262c`,
+        theme_color: `#000000`,
         display: `standalone`,
         icon: `src/assets/favicon-32x32.png`,
       },
-    },
+	  },
+	  `gatsby-plugin-robots-txt`,
+	//   Have a look into this later 
+	//   {
+	// 	  resolve: `gatsby-source-apiserver`,
+	// 	  options: {
+	// 		  url: 'https://swapi.co/api/people/',
+	// 		  method: 'get',
+	// 		  entityLevel: `results`,
+	// 		  headers: {
+	// 			  'Content-Type': 'application/json'
+	// 		  },
+	// 		  typePrefix: 'internal__',
+	// 		  name: `posts`,
+	// 		  params: {
+	// 			  results: 10
+	// 		  },
+	// 		  verboseOutput: true,
+	// 	  }
+	//  }
   ],
 }

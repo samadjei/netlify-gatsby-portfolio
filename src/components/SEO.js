@@ -9,7 +9,7 @@ const query = graphql`
         author
         siteDesc: description
         image
-        siteUrl: url
+        siteUrl
         siteTitle: title
         twitterUsername
       }
@@ -30,7 +30,7 @@ const SEO = ({ title, url, description }) => {
     <Helmet htmlAttributes={{ lang: "en" }} title={` ${siteTitle} | ${author}`}>
       <meta name="description" content={description} />
 		<meta name="image" content={image} />
-		<meta property="og:url" content={url} />
+		<meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

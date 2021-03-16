@@ -57,6 +57,7 @@ export const query = graphql`
         id
         title
         category
+		  updated_at
       }
     }
   }
