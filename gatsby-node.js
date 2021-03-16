@@ -2,6 +2,7 @@ const path = require("path")
 const { node } = require("prop-types")
 
 // create pages dynamically
+// ! Add below slug later -> updated_at
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
@@ -9,7 +10,6 @@ exports.createPages = async ({ graphql, actions }) => {
       blogs: allStrapiBlogs {
         nodes {
           slug
-			 updated_at
         }
       }
     }
@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`src/templates/BlogTemplate.js`),
       context: {
 			slug: blog.slug,
-			lastmoddate: node.updated_at
+			// lastmoddate: node.updated_at
       },
     })
   })

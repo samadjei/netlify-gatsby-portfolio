@@ -26,7 +26,7 @@ Blog.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-//   category: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 }
 
