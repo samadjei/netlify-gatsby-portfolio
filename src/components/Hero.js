@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="hero__grid">
           <div className="hero__content">
             <h1 className="hero--title hero--white-text">
-              Freelance web developer
+              Freelance WordPress developer
             </h1>
             <p className="hero--desc hero--white-text">
               Hey there,

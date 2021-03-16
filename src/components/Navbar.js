@@ -19,7 +19,7 @@ class Navbar extends Component {
           <div className="navbar__container">
             <div className="navbar--logo">
               <Link to="/">
-                <h3>Samuel Adjei</h3>
+                <h3>Sam Adjei</h3>
               </Link>
             </div>
             <div className="navbar__links">

@@ -1,12 +1,12 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Freelance Web Developer",
-    description: "Freelance Web Developer",
-    author: "Samuel Adjei",
+    title: "Freelance WordPress Developer",
+    description: "I am a freeelance web designer and developer specialising in building bespoke and beautiful websites for buisnesses.",
+    author: "Sam Adjei",
     twitterUsername: "@samkadjei",
-    image: "static/twitter-img.png",
-    siteUrl: "https://samadjei.com",
+    image: "src/assets/twitter-img.png",
+    siteUrl: "https://www.samadjei.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
