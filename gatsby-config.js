@@ -5,7 +5,7 @@ module.exports = {
     description: "I am a freeelance web designer and developer specialising in building bespoke and beautiful websites for buisnesses.",
     author: "Sam Adjei",
     twitterUsername: "@samkadjei",
-    image: "src/assets/twitter-img.png",
+    image: "/twitter-img.png",
     siteUrl: "https://www.samadjei.com",
   },
   plugins: [
@@ -56,7 +56,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/assets/favicon-32x32.png`,
+        icon: `src/static/favicon.ico`,
       },
 	  },
 	  `gatsby-plugin-robots-txt`,

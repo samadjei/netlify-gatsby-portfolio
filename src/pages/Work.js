@@ -11,7 +11,7 @@ const Work = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Work" />
+      <SEO title="Work" description="Here is a showcase of some of the work done by Sam Adjei"/>
       <section className="projects-page">
         <Projects projects={projects} title="all projects" />
       </section>

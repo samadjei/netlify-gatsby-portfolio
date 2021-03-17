@@ -83,7 +83,6 @@ export const query = graphql`
       content
       title
       desc
-      # category
     }
   }
 `

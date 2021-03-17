@@ -8,7 +8,7 @@ const Contacts = () => {
     <Layout>
       <section className="contacts container">
         <Title title={"Contact Me"} className="contact--title" />
-        <SEO title="Contact" />
+        <SEO title="Contact" description="You can contact Sam Adjei via email form, Twitter or LinkedIn"/>
         <p className="contact--sub">
           Get in touch with me, i am currently available for{" "}
           <span className="contact--hire">hire</span>!
