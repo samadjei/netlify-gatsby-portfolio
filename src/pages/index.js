@@ -18,7 +18,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home"/>
+      <SEO title="Sam Adjei" description="Homepage of Sam Adjei"/>
       <Hero />
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Samuel Adjei as your developer?" />
