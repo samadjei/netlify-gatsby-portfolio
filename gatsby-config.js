@@ -56,7 +56,29 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `static/favicon.ico`,
+			icon: `src/assets/android-chrome-512x512.png`,
+			icons: [
+				{
+				  src: `src/assets/favicon-32x32.png`,
+				  sizes: `32x32`,
+				  type: `image/png`,
+				},
+				{
+				  src: `src/assets/android-chrome-192x192.png`,
+				  sizes: `192x192`,
+				  type: `image/png`,
+				},
+				{
+				  src: `src/assets/android-chrome-512x512.png`,
+				  sizes: `512x512`,
+				  type: `image/png`,
+				},
+				{
+				  src: `src/assets/apple-touch-icon.png`,
+				  sizes: `167x167`,
+				  type: `image/png`,
+				},
+			 ],
       },
 	  },
 	  `gatsby-plugin-robots-txt`,
