@@ -56,7 +56,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/static/favicon.ico`,
+        icon: `static/favicon.ico`,
       },
 	  },
 	  `gatsby-plugin-robots-txt`,
