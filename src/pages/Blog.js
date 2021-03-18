@@ -17,9 +17,9 @@ const Blog = ({
         description="Sam Adjei posts blog entries dedicated to web design, development and all this related to freelancing!"
       />
       <section className="blog-setup">
-        <div className="blog-page">
+        <div className="blog-posts">
           <Blogs blogs={blogs} title="Blogs" />
-        </div>
+				</div>
       </section>
     </Layout>
   )

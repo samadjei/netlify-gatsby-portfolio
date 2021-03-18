@@ -17,7 +17,6 @@
 
 .blog {
   display: block;
-  border-radius: $border-radius;
   box-shadow: $light-shadow;
   transition: all 0.3s ease-in;
   height: 100%;
@@ -115,4 +114,8 @@
   width: 2.75rem;
   height: 2.75rem;
   margin-left: 1rem;
+}
+
+.btn-button {
+  background: red;
 }

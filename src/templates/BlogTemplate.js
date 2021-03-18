@@ -1,9 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
-import { Button } from "../components/Button"
 
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
@@ -21,11 +20,6 @@ const BlogTemplate = ({ data }) => {
             <article className="blog-content">
               <ReactMarkdown className="some-content" source={content} />
             </article>
-            <Link className="btn--center" to="/blog">
-              <Button buttonStyle="btn--primary" buttonSize="btn--desktop">
-                Blog Page
-              </Button>
-            </Link>
           </div>
           <div className="follow">
             <h3>Follow me for more insights on:</h3>

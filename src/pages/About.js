@@ -10,17 +10,19 @@ import Contact from "../components/Contact"
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"
 import { FaSass } from "react-icons/fa"
-import { FaPhp } from "react-icons/fa"
+// import { FaPhp } from "react-icons/fa"
 import { FaReact } from "react-icons/fa"
 import { FaFigma } from "react-icons/fa"
-import { FaAdobe } from "react-icons/fa"
+import { FaElementor } from "react-icons/fa"
+import { SiGatsby } from "react-icons/si"
+
 
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
       aboutProfile: file(relativePath: { eq: "profile-photo.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -90,9 +92,10 @@ const About = () => {
                 <FaCss3Alt className="stack-icons" />
                 <FaSass className="stack-icons" />
                 <FaReact className="stack-icons" />
-                <FaPhp className="stack-icons" />
+                <SiGatsby className="stack-icons" />
+                {/* <FaPhp className="stack-icons" /> */}
+                <FaElementor className="stack-icons" />
                 <FaFigma className="stack-icons" />
-                <FaAdobe className="stack-icons" />
               </div>
             </div>
           </div>

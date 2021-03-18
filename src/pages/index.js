@@ -10,14 +10,14 @@ import SEO from "../components/SEO"
 import Blogs from "../components/Blogs"
 // import Testimonials from "../components/Testimonials"
 
-export default ({data}) => {
-	const {
-	  allStrapiProjects: { nodes: projects },
-	  allStrapiBlogs: { nodes: blogs },
-	} = data
+export default ({ data }) => {
+  const {
+    allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
+  } = data
   return (
     <Layout>
-      <SEO title="Sam Adjei" description="Homepage of Sam Adjei"/>
+      <SEO title="Sam Adjei" description="Homepage of Sam Adjei" />
       <Hero />
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Sam Adjei as your developer?" />
@@ -31,7 +31,7 @@ export default ({data}) => {
 
 export const query = graphql`
   {
-	allStrapiProjects(filter: {featured: {eq: true}}) {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
         id
         title
@@ -40,7 +40,7 @@ export const query = graphql`
         image {
           childImageSharp {
             fluid {
-					...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -58,7 +58,10 @@ export const query = graphql`
         date(formatString: "DD MMM, YYYY")
         id
         title
-		  category
+        category
+				author {
+					username
+				}
       }
     }
   }
