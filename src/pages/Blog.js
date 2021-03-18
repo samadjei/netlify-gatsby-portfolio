@@ -12,9 +12,14 @@ const Blog = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Blog" description="Sam Adjei posts blog entries dedicated to web design, development and all this related to freelancing!"/>
-      <section className="blog-page">
-        <Blogs blogs={blogs} title="Blogs" />
+      <SEO
+        title="Blog"
+        description="Sam Adjei posts blog entries dedicated to web design, development and all this related to freelancing!"
+      />
+      <section className="blog-setup">
+        <div className="blog-page">
+          <Blogs blogs={blogs} title="Blogs" />
+        </div>
       </section>
     </Layout>
   )
@@ -24,7 +29,7 @@ Blog.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-//   category: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 }
 
@@ -38,7 +43,7 @@ export const query = graphql`
         date(formatString: "DD MMM, YYYY")
         id
         title
-      #   category
+        category
       }
     }
   }

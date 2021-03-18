@@ -8,7 +8,20 @@ module.exports = {
     image: "/twitter-img.png",
     siteUrl: "https://www.samadjei.com",
   },
-  plugins: [
+	plugins: [
+		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+			  // You can add multiple tracking ids and a pageview event will be fired for all of them.
+			  trackingIds: [
+				 "G-PF2LZ4RWVW", // Google Analytics / GA
+			  ],
+			  pluginConfig: {
+				 // Puts tracking script in the head instead of the body
+				 head: true,
+			  },
+			},
+		 },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,

@@ -1,3 +1,6 @@
-.blog-page {
-   height: 69vh;
+.blog-setup {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
+  align-items: start;
 }

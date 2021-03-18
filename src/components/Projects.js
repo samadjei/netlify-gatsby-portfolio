@@ -3,6 +3,7 @@ import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
 
+
 const Projects = ({ title, projects, showLink }) => {
   return (
     <section className="pj container">
@@ -12,7 +13,7 @@ const Projects = ({ title, projects, showLink }) => {
         {projects.map(project => {
           return <Project key={project.id} {...project} />
         })}
-      </div>
+      </div> 
       {showLink && (
         <div className="link">
           <Link className="link--inner" to="/Work">

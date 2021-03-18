@@ -11,7 +11,7 @@ const Project = ({ image, url }) => {
         alt="project images"
         aria-label="Project images"
         href={url}
-      >
+		  >
         {image && (
           <Image fluid={image.childImageSharp.fluid} className="project__img" />
         )}
