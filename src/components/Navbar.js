@@ -14,8 +14,8 @@ class Navbar extends Component {
   render() {
     return (
       <>
-			 <nav className={this.state.clicked ? "navbar active" : "navbar"}>
-				 <div className="stay-fixed"></div>
+        <nav className={this.state.clicked ? "navbar active" : "navbar"}>
+          <div className="stay-fixed"></div>
           <div className="navbar__container">
             <div className="navbar--logo">
               <Link to="/">
