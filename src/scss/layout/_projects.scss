@@ -7,13 +7,15 @@
 }
 .project-center {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   justify-content: center;
   align-items: center;
   grid-gap: 4rem;
 }
 
 .project__img {
+  // max-width: 400px;
+  height: auto;
   box-shadow: $dark-shadow;
   cursor: pointer;
   border-radius: 5px;
