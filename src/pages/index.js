@@ -8,7 +8,6 @@ import MoreInfo from "../components/MoreInfo"
 import Contact from "../components/Contact"
 import SEO from "../components/SEO"
 import Blogs from "../components/Blogs"
-// import Testimonials from "../components/Testimonials"
 
 export default ({ data }) => {
   const {
