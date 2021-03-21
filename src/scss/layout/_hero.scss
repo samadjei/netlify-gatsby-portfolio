@@ -54,7 +54,7 @@
   &--title {
     text-transform: capitalize;
     margin-top: 0rem;
-	 margin-bottom: 1rem;
+    margin-bottom: 1rem;
     font-size: 3.5rem;
     @include media(">=desktop") {
       font-size: 5.5rem;
@@ -69,7 +69,6 @@
     line-height: 1.5;
     font-size: 1.75rem;
     max-width: 60rem;
-
   }
 
   &--l {
@@ -105,15 +104,15 @@
 
     @include media("<=tablet") {
       width: 25rem;
-		margin: 0 auto;
+      margin: 0 auto;
     }
   }
 
   &--caption {
-	  opacity: 0.6;
-	  font-size: 1.4rem;
-	  margin-top: 1rem;
-	  @include media("<=tablet") {
+    opacity: 0.6;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    @include media("<=tablet") {
       font-size: 1.2rem;
     }
   }

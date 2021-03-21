@@ -13,18 +13,19 @@ const Error = () => {
       <main className="error container">
         <div className="error__container">
           <h1 className="error__header">
-            He! You've reached a dead end. This page does not exist
+            Hey! You've reached a dead end. This page does not exist
           </h1>
-          <div className="conain">
+          <div className="error__gif">
             <img
               src="https://media.giphy.com/media/VwoJkTfZAUBSU/giphy.gif"
               alt="404 GIF by Mathew Lucas"
             />
           </div>
-
-          <Link to="/" className="btn">
-            Go back home
-          </Link>
+          <div className="error-btn">
+            <Link to="/" className="btn ">
+              Go back home
+            </Link>
+          </div>
         </div>
       </main>
     </Layout>
