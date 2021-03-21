@@ -108,8 +108,8 @@ const About = () => {
             </p>
             <div className="stack">
               <h4>Here are my current tech stack:</h4>
-              <div className="stack-items">
-                <div className="stakco">
+              <div className="stack__inner">
+                <div className="stakco first-item">
                   <FaHtml5 className="stack-icons" />
                   <p>HTML</p>
                 </div>

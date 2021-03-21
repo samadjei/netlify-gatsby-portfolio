@@ -30,12 +30,19 @@
   }
 }
 
+// .first-item {
+//   text-align: center;
+// }
+
 .stack {
-  &-items {
+  &__inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    justify-content: center;
+    align-items: center;
     grid-gap: 2rem;
     margin-top: 3rem;
+    text-align: center;
   }
   &-icons {
     display: inline-block;
