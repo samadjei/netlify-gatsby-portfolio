@@ -30,9 +30,8 @@ const Hero = () => {
               👋🏾
             </span>
             i’m Samuel, a freelance web developer with 3+ years of experience
-            building and designing bespoke and professional websites with the
-            latest web technologies such as WordPress and React to help
-            businesses gain exposure online.
+            building and designing beautiful, responsive and modern bespoke
+            websites with WordPress and React.
           </p>
           <div className="hero__list">
             <h2 className="hero__list--sub">If you're looking for:</h2>
