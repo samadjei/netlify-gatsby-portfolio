@@ -8,8 +8,15 @@ import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
+// import { DiscussionEmbed } from "disqus-react"
+
 const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog
+
+  // const disqusShortname = `https://samadjei.com`
+  // const disqusConfig = {
+  //   identifier: data.blog.id,
+  // }
 
   return (
     <Layout>

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Blog = ({ id, title, date, desc, slug }) => {
+const Blog = ({ id, title, desc, slug }) => {
   return (
     <Link to={`/blogs/${slug}`} className="blog" key={id}>
       <article>
@@ -13,7 +13,7 @@ const Blog = ({ id, title, date, desc, slug }) => {
           </div>
           <div className="blog__footer">
             {/* <p className="blog-category">{category}</p> */}
-            <p className="blog-date">{date}</p>
+            {/* <p className="blog-date">{date}</p> */}
           </div>
         </div>
 		  </article>

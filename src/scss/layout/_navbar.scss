@@ -169,7 +169,7 @@
         background-color: transparent;
         color: $text;
         padding: 14px 25px;
-        border: 1px solid $text;
+        border: 2px solid $text;
         transition: all 0.3s ease-out;
 
         &:hover {
@@ -186,7 +186,7 @@
       align-items: center;
       width: 80vw;
       margin: 0 auto;
-      margin-top: 8rem;
+      margin-top: 10rem;
     }
 
     &__social {
@@ -198,7 +198,6 @@
     display: inline-block;
     transition: all 0.5s ease;
     &:hover {
-      // color: $white;
       transform: translate(0, -8px);
     }
     width: 3.25rem;

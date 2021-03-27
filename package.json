@@ -7,6 +7,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "body-scroll-lock": "^3.1.5",
+    "disqus-react": "^1.0.11",
     "gatsby": "^2.32.11",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-gtag": "^3.1.0",

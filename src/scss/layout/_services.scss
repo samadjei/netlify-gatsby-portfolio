@@ -2,13 +2,9 @@
 @import "../abstracts/variables";
 @import "../abstracts/breakpoints";
 
-.services .container {
-  padding-top: 10rem;
-}
-
 /* Card */
 .services {
-  padding: 10rem 2.5rem;
+  padding: 5rem 0rem;
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -18,7 +14,6 @@
     grid-gap: 4rem;
     justify-content: center;
     align-items: start;
-    padding-top: 1rem;
     max-width: 114rem;
     margin: 0 auto;
     width: 100%;
@@ -28,7 +23,9 @@
     display: flex;
     max-width: 40rem;
     margin: 0 auto;
-    padding-top: 4rem;
+    @include media("<=phone") {
+      padding: 0rem 1rem;
+    }
   }
 }
 

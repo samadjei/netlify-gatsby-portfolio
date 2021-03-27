@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 2.5rem 2.5rem;
 
   &__grid {
     display: flex;
@@ -66,7 +66,6 @@
 
   &--desc {
     margin-bottom: $m-bottom-l;
-    line-height: 1.5;
     font-size: 1.75rem;
     max-width: 60rem;
   }
@@ -75,11 +74,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    line-height: 1.75;
+    width: 100%;
   }
 
   &--check {
-    display: inline-block;
     color: #267b70;
     font-size: 2rem;
     margin-right: 0.5rem;
