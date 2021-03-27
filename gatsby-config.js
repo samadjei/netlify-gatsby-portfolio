@@ -23,6 +23,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-K5ZCLXH",
+        includeInDevelopment: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
