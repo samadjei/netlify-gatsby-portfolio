@@ -169,13 +169,14 @@
         background-color: transparent;
         color: $text;
         padding: 14px 25px;
-        border: 2px solid $text;
-        transition: all 0.3s ease-out;
+        border: 1px solid $primary-color;
+        transition: all 0.3s ease-in;
 
-        &:hover {
-          background: #fff;
-          color: #242424;
-          transition: 250ms;
+        &:hover,
+        &:focus {
+          border: 1px solid $primary-color;
+          color: $white;
+          background-color: $primary-color;
         }
       }
     }

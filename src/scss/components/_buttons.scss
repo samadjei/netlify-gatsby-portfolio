@@ -1,13 +1,14 @@
 @import "../abstracts/variables";
 
 .btn {
+  position: relative;
   padding: 0.8rem 2rem;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   background-color: $primary-color;
   color: #fff;
-  //   border-radius: 5px;
+  overflow: hidden;
 }
 
 .btn--primary {
@@ -17,9 +18,22 @@
 .btn--outline {
   color: $white;
   padding: 12px 25px;
+  transition: all 0.3s ease-in;
+  &:hover,
+  &:focus {
+    border: 1px solid $primary-color;
+    color: $text;
+    background-color: #fff;
+  }
 }
 
 .btn--desktop {
   padding: 16px 26px;
   font-size: 20px;
+	&:hover,
+  &:focus {
+    border: 1px solid $primary-color;
+    color: $text;
+    background-color: #fff;
+  }
 }
