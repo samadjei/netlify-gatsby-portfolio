@@ -30,7 +30,7 @@ const Hero = () => {
               👋🏾
             </span>
             i’m Samuel, a freelance web developer with 3+ years of experience
-            building and designing beautiful, responsive and modern bespoke
+            building and designing beautiful, responsive and modern
             websites with WordPress and React.
           </p>
           <div className="hero__list">
@@ -46,7 +46,7 @@ const Hero = () => {
                 <span>
                   <FiCheck className="hero--check" />
                 </span>
-                A way to increase exposure to potential clients on the web
+                A way to increase exposure to potential clients on Google
               </li>
               <li className="hero--l hero--white-text">
                 <span>

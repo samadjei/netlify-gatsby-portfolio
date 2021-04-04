@@ -29,10 +29,10 @@ const BlogTemplate = ({ data }) => {
             </article>
           </div>
           <div className="follow">
-            <h3>Follow me for more insights on:</h3>
+            <h3 className="follow__header">Follow me for more insights on:</h3>
             <ul className="template__links">
               <li className="template__lists">
-                Twitter
+                {/* Twitter */}
                 <a
                   className="template__outer"
                   target="_blank"
@@ -45,7 +45,7 @@ const BlogTemplate = ({ data }) => {
                 </a>
               </li>
               <li className="template__lists">
-                LinkedIn
+                {/* LinkedIn */}
                 <a
                   className="template__outer"
                   target="_blank"
@@ -58,7 +58,7 @@ const BlogTemplate = ({ data }) => {
                 </a>
               </li>
               <li className="template__lists">
-                Instagram
+                {/* Instagram */}
                 <a
                   className="template__outer"
                   target="_blank"

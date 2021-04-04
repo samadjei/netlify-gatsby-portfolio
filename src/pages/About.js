@@ -49,11 +49,10 @@ const About = () => {
             </p>
             <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
-              latest web technologies available to allow me to build great and
-              fast websites. When left to my own devices, my preferred tech
-              stack is React, SCSS and GraphQL with Gatsby or NextJS. This is
-              then fed into an automated CI pipeline using on Netlify/Vercel via
-              Git.
+              latest web technologies, allowing me to build great and fast
+              websites. When left to my own devices, my preferred tech stack is
+              React, SCSS and GraphQL with Gatsby or NextJS. This is then fed
+              into an automated CI pipeline using on Netlify/Vercel via Git.
             </p>
             <p className="about__content--info">
               However, as a contractor, i tend and depending on the project i'm
@@ -62,10 +61,10 @@ const About = () => {
               allows me to build beautiful WordPress sites in a shorter time
               than it would take me if i was to build from scratch so this gives
               me the opportunity to focus on other important aspects of the site
-              such as performance and SEO. When it comes to design, i always
-              find it important to get understanding of the website i'm going to
-              build by creating a wireframe of the template, then designing the
-              site and its pages on a design tool such as Figma or Adobe XD.
+              such as site performance and SEO. When it comes to design, i
+              always find it important to get an understanding of the website
+              i'm going to build by creating a wireframe of the template, then
+              designing the site and its pages on a design tool like Figma.
             </p>
             <p className="about__content--info">
               I am currently in my 3rd year as a UWE (University of the West of
@@ -89,7 +88,7 @@ const About = () => {
             <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
               latest web technologies have available which will allow me to
-              design and create the most modern and performante site possible. I
+              design and create the most modern and swift site possible. I
               enjoy learning and challenging myself when it comes to building
               website / web applications.
             </p>
