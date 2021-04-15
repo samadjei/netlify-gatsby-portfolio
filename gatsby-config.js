@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: "Freelance WordPress Developer",
     description:
-      "I am a freeelance web designer and developer specialising in building bespoke and beautiful websites for buisnesses.",
+      "I am a freelance web designer and developer specialising in building bespoke and beautiful websites for businesses.",
     author: "Sam Adjei",
     twitterUsername: "@samkadjei",
     image: "/twitter-img.png",

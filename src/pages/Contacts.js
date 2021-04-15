@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
 import SEO from "../components/SEO"
-// import Accordion from "../components/Accordion"
+
 
 const Contacts = () => {
 

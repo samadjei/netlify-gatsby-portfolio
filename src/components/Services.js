@@ -1,12 +1,42 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Title from "./Title"
+import { gsap, Power3 } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const Services = ({ title }) => {
+  useEffect(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "services",
+        // start: 'top'
+        markers: true,
+      },
+    })
+
+    tl.from(".top-animation", {
+      y: 200,
+      opacity: 0,
+      ease: Power3.easeOut,
+      delay: 0.5,
+      duration: 1.5,
+    }).from(
+      ".second-animation",
+      {
+        y: 200,
+        opacity: 0,
+        ease: Power3.easeOut,
+        duration: 1.5,
+      },
+      "-=0.5"
+    )
+  })
+
   return (
     <section className="services container">
       <Title title={title} className="title" />
       <div className="services__grid">
-        <div className="services__content">
+        <div className="services__content top-animation">
           <div>
             <span>0.1</span>
             <h3>Web Design</h3>
@@ -17,7 +47,7 @@ const Services = ({ title }) => {
             </p>
           </div>
         </div>
-        <div className="services__content">
+        <div className="services__content top-animation">
           <div>
             <span>0.2</span>
 
@@ -29,7 +59,7 @@ const Services = ({ title }) => {
             </p>
           </div>
         </div>
-        <div className="services__content">
+        <div className="services__content second-animation">
           <div>
             <span>0.3</span>
 
@@ -41,7 +71,7 @@ const Services = ({ title }) => {
             </p>
           </div>
         </div>
-        <div className="services__content">
+        <div className="services__content second-animation">
           <div>
             <span>0.4</span>
             <h3>Content Management</h3>

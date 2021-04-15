@@ -1,7 +1,27 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Title from "./Title"
+import { gsap, Power3 } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const MoreInfo = ({ title }) => {
+  useEffect(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "moreInfo",
+        // start: 'top'
+        markers: true,
+      },
+    })
+
+    tl.from(".hire", {
+      y: 200,
+      opacity: 0,
+      ease: Power3.easeOut,
+      delay: 0.8,
+      duration: 1.5,
+    })
+  })
   return (
     <section className="container moreInfo">
       <Title title={title} className="title" />
@@ -27,10 +47,10 @@ const MoreInfo = ({ title }) => {
           project has been fulfilled.
         </li>
         <li className="hire--reasons">
-          <span>6.</span> Looking to update your ageing site? I work with
-          the latest web technologies available which includes: HTML, (S)CSS,
-          JavaScript, React and Elementor to ensure your site gets that
-          modern touch.
+          <span>6.</span> Looking to update your ageing site? I work with the
+          latest web technologies available which includes: HTML, (S)CSS,
+          JavaScript, React and Elementor to ensure your site gets that modern
+          touch.
         </li>
       </ul>
     </section>
