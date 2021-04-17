@@ -21,7 +21,6 @@ export default ({ data }) => {
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Sam Adjei as your developer?" />
       <Project projects={projects} title="See my work" showLink />
-      {/* <Testimonials title="What others say about me" /> */}
       <Contact title="Let's get connected" />
       <Blogs blogs={blogs} title="Latest Blog Posts" showLink />
     </Layout>
