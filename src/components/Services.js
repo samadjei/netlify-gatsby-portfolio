@@ -8,9 +8,7 @@ const Services = ({ title }) => {
   useEffect(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "services",
-        // start: 'top'
-        markers: true,
+				trigger: "services",
       },
     })
 
