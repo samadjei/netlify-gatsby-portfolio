@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero__grid">
         <div className="hero__content" ref={el => (content = el)}>
           <h1 className="hero--title hero--white-text">
-            Freelance WordPress developer
+            Freelance Web Developer
           </h1>
           <p className="hero--desc hero--white-text">
             Hey there,
