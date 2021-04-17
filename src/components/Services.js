@@ -1,35 +1,7 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Title from "./Title"
-import { gsap, Power3 } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger)
 
 const Services = ({ title }) => {
-  useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-				trigger: "services",
-      },
-    })
-
-    tl.from(".top-animation", {
-      y: 200,
-      opacity: 0,
-      ease: Power3.easeOut,
-      delay: 0.5,
-      duration: 1.5,
-    }).from(
-      ".second-animation",
-      {
-        y: 200,
-        opacity: 0,
-        ease: Power3.easeOut,
-        duration: 1.5,
-      },
-      "-=0.5"
-    )
-  })
-
   return (
     <section className="services container">
       <Title title={title} className="title" />

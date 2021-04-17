@@ -1,26 +1,9 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
-import { gsap, Power3 } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger)
-const Projects = ({ title, projects, showLink }) => {
-	useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-				trigger: "project",
-      },
-    })
 
-    tl.from(".project__img", {
-      y: 200,
-      opacity: 0,
-      ease: Power3.easeOut,
-      delay: 0.5,
-      duration: 1.5,
-    })
-  })
+const Projects = ({ title, projects, showLink }) => {
   return (
     <section className="pj container">
       <Title title={title} />
