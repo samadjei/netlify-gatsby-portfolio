@@ -18,9 +18,9 @@ const Hero = () => {
     }
   `)
   return (
-    <section className="hero container" ref={el => (app = el)}>
+    <section className="hero container">
       <div className="hero__grid">
-        <div className="hero__content" ref={el => (content = el)}>
+        <div className="hero__content" >
           <h1 className="hero--title hero--white-text">
             Freelance Web Developer
           </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
             building and designing beautiful, responsive and modern websites
             with WordPress and React.
           </p>
-          <div className="hero__list" ref={el => (content = el)}>
+          <div className="hero__list">
             <h2 className="hero__list--sub">If you're looking for:</h2>
             <ul className="hero__listings">
               <li className="hero--l hero--white-text">
@@ -69,7 +69,7 @@ const Hero = () => {
             </Button>
           </a>
         </div>
-        <div className="profile__outer" ref={el => (images = el)}>
+        <div className="profile__outer">
           <div className="profile">
             <Image
               className="profile--photo"
