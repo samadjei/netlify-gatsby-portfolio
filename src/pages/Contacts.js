@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 
 const Contacts = () => {
@@ -10,7 +10,7 @@ const Contacts = () => {
     <Layout>
       <section className="contacts container">
         <Title title={"Contact Me"} className="contact--title" />
-        <SEO
+        <Seo
           title="Contact"
           description="You can contact Sam Adjei via email form, Twitter or LinkedIn"
         />

@@ -31,12 +31,21 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -103,23 +112,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-robots-txt`,
-    //   Have a look into this later
-    //   {
-    // 	  resolve: `gatsby-source-apiserver`,
-    // 	  options: {
-    // 		  url: 'https://swapi.co/api/people/',
-    // 		  method: 'get',
-    // 		  entityLevel: `results`,
-    // 		  headers: {
-    // 			  'Content-Type': 'application/json'
-    // 		  },
-    // 		  typePrefix: 'internal__',
-    // 		  name: `posts`,
-    // 		  params: {
-    // 			  results: 10
-    // 		  },
-    // 		  verboseOutput: true,
-    // 	  }
-    //  }
   ],
 }

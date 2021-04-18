@@ -6,17 +6,17 @@ import Services from "../components/Services"
 import Project from "../components/Projects"
 import MoreInfo from "../components/MoreInfo"
 import Contact from "../components/Contact"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import Blogs from "../components/Blogs"
 
-export default ({ data }) => {
+export default function Home({ data }) {
   const {
     allStrapiProjects: { nodes: projects },
     allStrapiBlogs: { nodes: blogs },
   } = data
   return (
     <Layout>
-      <SEO title="Sam Adjei" description="Homepage of Sam Adjei" />
+      <Seo title="Sam Adjei" description="Homepage of Sam Adjei" />
       <Hero />
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Sam Adjei as your developer?" />

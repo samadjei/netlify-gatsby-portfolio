@@ -1,5 +1,4 @@
 import React from "react"
-import "../scss/components/_buttons.scss"
 
 const STYLES = ["btn--primary", "btn--outline", "btn--test"]
 

@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import Title from "../components/Title"
 import Contact from "../components/Contact"
 
@@ -31,7 +31,7 @@ const About = () => {
   return (
     <Layout>
       <div className="about">
-        <SEO
+        <Seo
           title="About"
           description="Hey there! I'm Samuel, a freelance web developer from Slough, UK."
         />
