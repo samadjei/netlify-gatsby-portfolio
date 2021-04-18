@@ -3,9 +3,7 @@ import Layout from "../components/Layout"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
 
-
 const Contacts = () => {
-
   return (
     <Layout>
       <section className="contacts container">
@@ -60,6 +58,12 @@ const Contacts = () => {
                 Name*
               </label>
               <input type="text" name="name" placeholder="John Doe" />
+            </div>
+            <div className="contact__info">
+              <label className="label" htmlFor="company">
+                Company*
+              </label>
+              <input type="text" name="company" placeholder="Company" />
             </div>
             <div className="contact__info">
               <label className="label" htmlFor="email">
