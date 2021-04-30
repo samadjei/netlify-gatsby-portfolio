@@ -9,12 +9,12 @@ import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
 const BlogTemplate = ({ data }) => {
-  const { content, title, desc } = data.blog
+  const { content, title, description } = data.blog
 
   return (
     <Layout>
       <div className="template container">
-        <SEO title={title} description={desc} />
+        <SEO title={title} description={description} />
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">
@@ -76,7 +76,7 @@ export const query = graphql`
     blog: strapiBlogs(slug: { eq: $slug }) {
       content
       title
-      desc
+      description
     }
   }
 `

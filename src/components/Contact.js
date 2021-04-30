@@ -20,30 +20,36 @@ const Contact = ({ title }) => {
           <input type="hidden" id="name" value="contact v1" />
           <div className="contact__info">
             <label for="name" className="label" htmlFor="name">
-              Name
+              Name*
             </label>
-            <input type="text" id="name" placeholder="John Doe" />
+            <input
+              type="text"
+              id="name"
+              placeholder="John Doe"
+              required="required"
+            />
           </div>
           <div className="contact__info">
             <label className="label" htmlFor="company">
-              Company*
+              Company
             </label>
             <input type="text" name="company" placeholder="Company" />
           </div>
           <div className="contact__info">
             <label for="email" className="label" htmlFor="email">
-              Email
+              Email*
             </label>
             <input
               id="email"
               type="email"
               name="email"
               placeholder="john.doe@gmail.com"
+              required="required"
             />
           </div>
           <div className="contact__info">
             <label for="message" className="label" htmlFor="message">
-              Message
+              Message*
             </label>
             <textarea
               id="message"

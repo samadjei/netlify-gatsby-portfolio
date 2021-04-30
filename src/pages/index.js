@@ -35,6 +35,7 @@ export const query = graphql`
         title
         url
         content
+				slug
         image {
           childImageSharp {
             gatsbyImageData(
@@ -55,7 +56,7 @@ export const query = graphql`
       nodes {
         slug
         content
-        desc
+        description
         date(formatString: "DD MMM, YYYY")
         id
         title
