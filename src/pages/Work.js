@@ -26,7 +26,7 @@ export const query = graphql`
         id
         title
         content
-        slug
+        # slug
         url
         image {
           childImageSharp {

@@ -2,26 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
-// import { DiscussionEmbed } from "disqus-react"
-
 const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog
-
-  // const disqusShortname = `https://samadjei.com`
-  // const disqusConfig = {
-  //   identifier: data.blog.id,
-  // }
 
   return (
     <Layout>
       <div className="template container">
-        <Seo title={title} description={desc} />
+        <SEO title={title} description={desc} />
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">

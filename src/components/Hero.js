@@ -1,26 +1,15 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
+
+import { StaticImage } from "gatsby-plugin-image"
 
 import { Button } from "./Button"
 import { FiCheck } from "react-icons/fi"
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query Images {
-      profile: file(relativePath: { eq: "profile-photo.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <section className="hero container">
       <div className="hero__grid">
-        <div className="hero__content" >
+        <div className="hero__content">
           <h1 className="hero--title hero--white-text">
             Freelance Web Developer
           </h1>
@@ -71,9 +60,13 @@ const Hero = () => {
         </div>
         <div className="profile__outer">
           <div className="profile">
-            <Image
+            <StaticImage
               className="profile--photo"
-              fluid={data.profile.childImageSharp.fluid}
+              src="../assets/profile-photo.jpg"
+              width={400}
+              alt="Profile Photo"
+              placeholder="tracedSVG"
+              quality="100"
             />
             <figcaption className="profile--caption">
               Freelance Web Developer, Samuel Adjei
