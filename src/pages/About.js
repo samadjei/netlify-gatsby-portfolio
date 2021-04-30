@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/Seo"
 import Title from "../components/Title"
@@ -10,24 +9,12 @@ import Contact from "../components/Contact"
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"
 import { FaSass } from "react-icons/fa"
-// import { FaPhp } from "react-icons/fa"
 import { FaReact } from "react-icons/fa"
 import { FaFigma } from "react-icons/fa"
 import { FaElementor } from "react-icons/fa"
 import { SiGatsby } from "react-icons/si"
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      profile: file(relativePath: { eq: "profile-photo.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <Layout>
       <div className="about">
@@ -88,14 +75,18 @@ const About = () => {
             <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
               latest web technologies have available which will allow me to
-              design and create the most modern and swift site possible. I
-              enjoy learning and challenging myself when it comes to building
-              website / web applications.
+              design and create the most modern and swift site possible. I enjoy
+              learning and challenging myself when it comes to building website
+              / web applications.
             </p>
             <div className="about-img">
-              <Img
+              <StaticImage
                 className="about--photo"
-                fluid={data.profile.childImageSharp.fluid}
+                src="../assets/profile-photo.jpg"
+                width={400}
+                alt="Profile Photo"
+                placeholder="blurred"
+                format={["AUTO", "WEBP", "AVIF"]}
               />
             </div>
             <p className="about__content--info">

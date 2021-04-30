@@ -37,9 +37,12 @@ export const query = graphql`
         content
         image {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              blurredOptions: { width: 100 }
+              placeholder: BLURRED
+              width: 420
+              transformOptions: { cropFocus: CENTER }
+            )
           }
         }
         stack {

@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Project = ({ image, url }) => {
   return (
@@ -12,9 +13,11 @@ const Project = ({ image, url }) => {
         aria-label="Project images"
         href={url}
       >
-        {image && (
-          <Image fluid={image.childImageSharp.fluid} className="project__img" />
-        )}
+        <GatsbyImage
+          className="project__img"
+          image={getImage(image)}
+          alt="Portfolio Images"
+        />
       </a>
     </section>
   )

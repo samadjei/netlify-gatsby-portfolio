@@ -65,8 +65,8 @@ const Hero = () => {
               src="../assets/profile-photo.jpg"
               width={400}
               alt="Profile Photo"
-              placeholder="tracedSVG"
-              quality="100"
+              placeholder="blurred"
+              format={["AUTO", "WEBP", "AVIF"]}
             />
             <figcaption className="profile--caption">
               Freelance Web Developer, Samuel Adjei

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 
 const Work = ({
   data: {
@@ -11,7 +11,10 @@ const Work = ({
 }) => {
   return (
     <Layout>
-      <Seo title="Work" description="Here is a showcase of some of the work done by Sam Adjei"/>
+      <SEO
+        title="Work"
+        description="Here is a showcase of some of the work done by Sam Adjei"
+      />
       <section className="projects-page">
         <Projects projects={projects} title="all projects" />
       </section>
@@ -30,9 +33,13 @@ export const query = graphql`
         url
         image {
           childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              blurredOptions: { width: 100 }
+              placeholder: BLURRED
+              width: 420
+							height: 210
+              transformOptions: { cropFocus: CENTER }
+            )
           }
         }
       }
