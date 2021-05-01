@@ -6,7 +6,7 @@ import Services from "../components/Services"
 import Project from "../components/Projects"
 import MoreInfo from "../components/MoreInfo"
 import Contact from "../components/Contact"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 import Blogs from "../components/Blogs"
 
 export default function Home({ data }) {
@@ -16,7 +16,7 @@ export default function Home({ data }) {
   } = data
   return (
     <Layout>
-      <Seo title="Sam Adjei" description="Homepage of Sam Adjei" />
+      <SEO title="Sam Adjei" description="Homepage of Sam Adjei" />
       <Hero />
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Sam Adjei as your developer?" />

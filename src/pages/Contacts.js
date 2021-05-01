@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 
 const Contacts = () => {
   return (
     <Layout>
       <section className="contacts container">
         <Title title={"Contact Me"} className="contact--title" />
-        <Seo
+        <SEO
           title="Contact"
           description="You can contact Sam Adjei via email form, Twitter or LinkedIn"
         />
