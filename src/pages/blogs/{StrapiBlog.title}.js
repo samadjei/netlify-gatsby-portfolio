@@ -1,31 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../../components/Layout"
 import ReactMarkdown from "react-markdown"
-import Seo from "../components/Seo"
+import SEO from "../../components/SEO"
 
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
-// import { DiscussionEmbed } from "disqus-react"
-
-const BlogTemplate = ({ data }) => {
-  const { content, title, description } = data.blog
-
-  // const disqusShortname = `https://samadjei.com`
-  // const disqusConfig = {
-  //   identifier: data.blog.id,
-  // }
-
+const BlogTemplate = ({ pageContext: { title }, data }) => {
   return (
     <Layout>
       <div className="template container">
-        <Seo title={title} description={description} />
+        <SEO title={title} description={data.strapiBlogs.description} />
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">
-              <ReactMarkdown className="some-content" source={content} />
+              <ReactMarkdown>{data.strapiBlogs.content}</ReactMarkdown>
             </article>
           </div>
           <div className="follow">
@@ -79,8 +70,8 @@ const BlogTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query GetSingleBlog($slug: String) {
-    blog: strapiBlogs(slug: { eq: $slug }) {
+  query getSingleProject($title: String) {
+    strapiBlogs(title: { eq: $title }) {
       content
       title
       description

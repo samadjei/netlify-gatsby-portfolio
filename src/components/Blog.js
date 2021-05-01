@@ -16,7 +16,7 @@ const Blog = ({ id, title, description, slug }) => {
             {/* <p className="blog-date">{date}</p> */}
           </div>
         </div>
-		  </article>
+      </article>
     </Link>
   )
 }
