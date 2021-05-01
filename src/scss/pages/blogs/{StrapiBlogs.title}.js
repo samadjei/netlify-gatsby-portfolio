@@ -8,16 +8,8 @@ import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
-// import { DiscussionEmbed } from "disqus-react"
-
-const BlogTemplate = ({ data }) => {
-  const { content, title, description } = data.blog
-
-  // const disqusShortname = `https://samadjei.com`
-  // const disqusConfig = {
-  //   identifier: data.blog.id,
-  // }
-
+const BlogTemplate = ({ pageContent: { title }, data }) => {
+  // const { content, title, description } = data.blog
   return (
     <Layout>
       <div className="template container">
@@ -25,7 +17,10 @@ const BlogTemplate = ({ data }) => {
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">
-              <ReactMarkdown className="some-content" source={content} />
+              <ReactMarkdown
+                className="some-content"
+                source={data.strapiBlog.content}
+              />
             </article>
           </div>
           <div className="follow">
@@ -79,13 +74,25 @@ const BlogTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query GetSingleBlog($slug: String) {
-    blog: strapiBlogs(slug: { eq: $slug }) {
+  query getSingleBlog($title: String) {
+    strapiBlogs(title: { eq: $title }) {
       content
       title
       description
     }
   }
 `
+
+// export const query = graphql`
+//   query getSingleProject($title: String) {
+//     strapiProject(title: { eq: $title }) {
+//       description
+//       title
+//       image {
+//         publicURL
+//       }
+//     }
+//   }
+// `
 
 export default BlogTemplate

@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 const Error = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Dead End"
         description="This page does not exist, please go back"
       />

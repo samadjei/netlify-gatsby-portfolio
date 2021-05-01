@@ -60,7 +60,6 @@ module.exports = {
         apiURL: process.env.DEPLOY_URL
           ? "https://strapi-postgresql-portfolio.herokuapp.com"
           : "http://localhost:1337",
-        queryLimit: 1000,
         contentTypes: [`projects`, `blogs`],
       },
     },
