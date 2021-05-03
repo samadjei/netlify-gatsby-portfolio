@@ -1,22 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/Layout"
+import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
-import SEO from "../../components/SEO"
+import Seo from "../components/Seo"
 
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
 
-const BlogTemplate = ({ pageContext: { title }, data }) => {
+const BlogTemplate = ({ data }) => {
+  const { content, title, description } = data.blog
+
   return (
     <Layout>
       <div className="template container">
-        <SEO title={title} description={data.strapiBlogs.description} />
+        <Seo title={title} description={description} />
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">
-              <ReactMarkdown>{data.strapiBlogs.content}</ReactMarkdown>
+              {/* <ReactMarkdown className="some-content" source={content} /> */}
+              <ReactMarkdown>{content}</ReactMarkdown>
             </article>
           </div>
           <div className="follow">
@@ -70,8 +73,8 @@ const BlogTemplate = ({ pageContext: { title }, data }) => {
 }
 
 export const query = graphql`
-  query getSingleProject($title: String) {
-    strapiBlogs(title: { eq: $title }) {
+  query GetSingleBlog($slug: String) {
+    blog: strapiBlogs(slug: { eq: $slug }) {
       content
       title
       description

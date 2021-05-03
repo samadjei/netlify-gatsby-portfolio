@@ -93,7 +93,6 @@ const Contacts = () => {
             </button>
           </form>
         </div>
-        {/* <Accordion /> */}
       </section>
     </Layout>
   )

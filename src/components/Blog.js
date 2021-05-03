@@ -11,10 +11,6 @@ const Blog = ({ id, title, description, slug }) => {
             <h3>{title}</h3>
             <p className="blog-desc">{description}</p>
           </div>
-          <div className="blog__footer">
-            {/* <p className="blog-category">{category}</p> */}
-            {/* <p className="blog-date">{date}</p> */}
-          </div>
         </div>
       </article>
     </Link>
