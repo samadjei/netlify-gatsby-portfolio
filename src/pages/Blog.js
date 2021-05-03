@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 import PropTypes from "prop-types"
 
 const Blog = ({
@@ -12,7 +12,7 @@ const Blog = ({
 }) => {
   return (
     <Layout>
-      <Seo
+      <SEO
         title="Blog"
         description="Sam Adjei posts blog entries dedicated to web design, development and all this related to freelancing!"
       />

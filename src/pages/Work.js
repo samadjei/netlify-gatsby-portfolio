@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 
 const Work = ({
   data: {
@@ -11,7 +11,7 @@ const Work = ({
 }) => {
   return (
     <Layout>
-      <Seo
+      <SEO
         title="Work"
         description="Here is a showcase of some of the work done by Sam Adjei"
       />

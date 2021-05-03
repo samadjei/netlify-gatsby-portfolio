@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 import Title from "../components/Title"
 import Contact from "../components/Contact"
 
@@ -18,7 +18,7 @@ const About = () => {
   return (
     <Layout>
       <div className="about">
-        <Seo
+        <SEO
           title="About"
           description="Hey there! I'm Samuel, a freelance web developer from Slough, UK."
         />

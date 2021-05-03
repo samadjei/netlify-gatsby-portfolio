@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
-import Seo from "../components/Seo"
+import SEO from "../components/SEO"
 
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
@@ -13,7 +13,7 @@ const BlogTemplate = ({ pageContent: { title }, data }) => {
   return (
     <Layout>
       <div className="template container">
-        <Seo title={title} description={description} />
+        <SEO title={title} description={description} />
         <section className="blog__template">
           <div className="section-center">
             <article className="blog-content">
