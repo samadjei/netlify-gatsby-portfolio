@@ -1,5 +1,5 @@
 const path = require("path")
-const { node } = require("prop-types")
+// const { node } = require("prop-types")
 
 // create pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.blogs.nodes.forEach(blog => {
     createPage({
       path: `/blogs/${blog.slug}`,
-      component: path.resolve(`src/templates/BlogTemplate.js`),
+      component: path.resolve(`src/templates/blog-template.js`),
       context: {
         slug: blog.slug,
       },
