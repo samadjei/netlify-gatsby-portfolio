@@ -57,11 +57,16 @@ const Contacts = () => {
               <label className="label" htmlFor="name">
                 Name*
               </label>
-              <input type="text" name="name" placeholder="John Doe" />
+              <input
+                type="text"
+                name="name"
+                placeholder="John Doe"
+                required="required"
+              />
             </div>
             <div className="contact__info">
               <label className="label" htmlFor="company">
-                Company*
+                Company
               </label>
               <input type="text" name="company" placeholder="Company" />
             </div>
@@ -74,6 +79,7 @@ const Contacts = () => {
                 type="email"
                 name="email"
                 placeholder="john.doe@gmail.com"
+                required="required"
               />
             </div>
             <div className="contact__info">
@@ -86,6 +92,7 @@ const Contacts = () => {
                 rows="5"
                 required="required"
                 placeholder="Enter your message here..."
+                required="required"
               ></textarea>
             </div>
             <button className="btn btn--desktop contact__submit" type="submit">

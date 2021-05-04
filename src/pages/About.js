@@ -13,6 +13,7 @@ import { FaReact } from "react-icons/fa"
 import { FaFigma } from "react-icons/fa"
 import { FaElementor } from "react-icons/fa"
 import { SiGatsby } from "react-icons/si"
+import { SiNextDotJs } from "react-icons/si"
 
 const About = () => {
   return (
@@ -118,6 +119,10 @@ const About = () => {
                 <div className="stacko">
                   <SiGatsby className="stack-icons" />
                   <p>Gatsby</p>
+                </div>
+                <div className="stacko">
+                  <SiNextDotJs className="stack-icons" />
+                  <p>Next.js</p>
                 </div>
                 <div className="stacko">
                   <FaElementor className="stack-icons" />

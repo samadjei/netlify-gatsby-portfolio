@@ -10,9 +10,9 @@ const Contact = ({ title }) => {
         <span className="contact--hire">hire</span>!
       </p>
 
-      <div className="contact v1">
+      <div className="contact">
         <form
-          name="contact"
+          name="contact v1"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
