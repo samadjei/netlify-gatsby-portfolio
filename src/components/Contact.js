@@ -12,19 +12,20 @@ const Contact = ({ title }) => {
 
       <div className="contact">
         <form
-          name="contact v1"
+          name="contact"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
         >
-          <input type="hidden" id="name" value="contact v1" />
+          {/* User Inputs */}
+          <input type="hidden" name="form-name" value="contact" />
           <div className="contact__info">
-            <label for="name" className="label" htmlFor="name">
+            <label className="label" htmlFor="name">
               Name*
             </label>
             <input
               type="text"
-              id="name"
+              name="name"
               placeholder="John Doe"
               required="required"
             />
@@ -36,7 +37,7 @@ const Contact = ({ title }) => {
             <input type="text" name="company" placeholder="Company" />
           </div>
           <div className="contact__info">
-            <label for="email" className="label" htmlFor="email">
+            <label className="label" htmlFor="email">
               Email*
             </label>
             <input
@@ -48,15 +49,16 @@ const Contact = ({ title }) => {
             />
           </div>
           <div className="contact__info">
-            <label for="message" className="label" htmlFor="message">
+            <label className="label" htmlFor="message">
               Message*
             </label>
             <textarea
-              id="message"
+              for="message"
               name="message"
               rows="5"
               required="required"
               placeholder="Enter your message here..."
+              required="required"
             ></textarea>
           </div>
           <button className="btn btn--desktop contact__submit" type="submit">
