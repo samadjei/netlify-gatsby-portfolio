@@ -13,7 +13,7 @@ const Services = ({ title }) => {
             <p>
               I will use your feedback to provide you with a modern design of
               what your website could look like. Different iterations can be
-              created until find the most suitable design has been agreed.
+              created until the most suitable design has been agreed.
             </p>
           </div>
         </div>

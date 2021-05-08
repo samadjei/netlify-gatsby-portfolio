@@ -29,7 +29,7 @@ const Hero = () => {
                 <span>
                   <FiCheck className="hero--check" />
                 </span>
-                Someone to modernise you current website
+                Someone to modernise your current website
               </li>
               <li className="hero--l hero--white-text">
                 <span>

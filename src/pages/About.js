@@ -6,11 +6,12 @@ import SEO from "../components/SEO"
 import Title from "../components/Title"
 import Contact from "../components/Contact"
 
-import { FaHtml5 } from "react-icons/fa"
-import { FaCss3Alt } from "react-icons/fa"
-import { FaSass } from "react-icons/fa"
-import { FaReact } from "react-icons/fa"
-import { FaFigma } from "react-icons/fa"
+import { SiHtml5 } from "react-icons/si"
+import { SiCss3 } from "react-icons/si"
+import { SiJavascript } from "react-icons/si"
+import { SiSass } from "react-icons/si"
+import { SiReact } from "react-icons/si"
+import { SiFigma } from "react-icons/si"
 import { FaElementor } from "react-icons/fa"
 import { SiGatsby } from "react-icons/si"
 import { SiNextDotJs } from "react-icons/si"
@@ -55,8 +56,17 @@ const About = () => {
               designing the site and its pages on a design tool like Figma.
             </p>
             <p className="about__content--info">
-              I am currently in my 3rd year as a UWE (University of the West of
-              England) studying{" "}
+              I am currently in my 3rd year at{" "}
+              <a
+                className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.uwe.ac.uk/"
+                alt="UWE Link"
+              >
+                UWE{" "}
+              </a>{" "}
+              (University of the West of England) studying{" "}
               <a
                 className="underline"
                 target="_blank"
@@ -101,19 +111,23 @@ const About = () => {
               <h4>Here are my current tech stack:</h4>
               <div className="stack__inner">
                 <div className="stakco first-item">
-                  <FaHtml5 className="stack-icons" />
+                  <SiHtml5 className="stack-icons" />
                   <p>HTML</p>
                 </div>
                 <div className="stacko">
-                  <FaCss3Alt className="stack-icons" />
+                  <SiCss3 className="stack-icons" />
                   <p>CSS</p>
                 </div>
                 <div className="stacko">
-                  <FaSass className="stack-icons" />
+                  <SiJavascript className="stack-icons" />
+                  <p>CSS</p>
+                </div>
+                <div className="stacko">
+                  <SiSass className="stack-icons" />
                   <p>SASS</p>
                 </div>
                 <div className="stacko">
-                  <FaReact className="stack-icons" />
+                  <SiReact className="stack-icons" />
                   <p>React</p>
                 </div>
                 <div className="stacko">
@@ -129,7 +143,7 @@ const About = () => {
                   <p>Elementor</p>
                 </div>
                 <div className="figma">
-                  <FaFigma className="stack-icons" />
+                  <SiFigma className="stack-icons" />
                   <p>Figma</p>
                 </div>
               </div>
