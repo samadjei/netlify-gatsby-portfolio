@@ -18,7 +18,7 @@ const Hero = () => {
             <span role="img" aria-label="hand wave" class="wave">
               👋🏾
             </span>
-            i’m Samuel, a freelance web developer with 3+ years of experience
+            i’m Sam, a freelance web developer with 3+ years of experience
             building and designing beautiful, responsive and modern websites
             with WordPress and React.
           </p>
