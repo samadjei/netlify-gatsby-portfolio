@@ -6,6 +6,16 @@
   display: flex;
 }
 
-.follow__header {
-  padding-bottom: 1.5rem;
+.follow {
+  padding-top: 5rem;
+
+  &__header {
+    padding-bottom: 1.5rem;
+  }
+}
+
+pre {
+  background: $primary-color;
+  color: $white;
+  padding: 4rem 8.3rem;
 }

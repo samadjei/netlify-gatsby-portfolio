@@ -7,6 +7,7 @@ import SEO from "../components/SEO"
 import { FiInstagram } from "react-icons/fi"
 import { FiTwitter } from "react-icons/fi"
 import { FiLinkedin } from "react-icons/fi"
+import Title from "../components/Title"
 
 const BlogTemplate = ({ data }) => {
   const { content, title, description } = data.blog
@@ -16,9 +17,9 @@ const BlogTemplate = ({ data }) => {
       <div className="template container">
         <SEO title={title} description={description} />
         <section className="blog__template">
+          <Title title={title} />
           <div className="section-center">
             <article className="blog-content">
-              {/* <ReactMarkdown className="some-content" source={content} /> */}
               <ReactMarkdown>{content}</ReactMarkdown>
             </article>
           </div>
