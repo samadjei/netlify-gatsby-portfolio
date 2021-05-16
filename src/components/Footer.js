@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FiInstagram } from "react-icons/fi"
-import { FiTwitter } from "react-icons/fi"
-import { FiLinkedin } from "react-icons/fi"
+import { SiInstagram } from "react-icons/si"
+import { SiTwitter } from "react-icons/si"
+import { SiLinkedin } from "react-icons/si"
 const Footer = () => {
   return (
     <footer className="footer">
@@ -64,7 +64,7 @@ const Footer = () => {
                 alt="twitter link"
                 aria-label="Twitter"
               >
-                <FiTwitter className="socials--inner white" />
+                <SiTwitter className="socials--inner white" />
               </a>
               <a
                 className="socials__outer"
@@ -74,7 +74,7 @@ const Footer = () => {
                 alt="linkedin link"
                 aria-label="LinkedIn"
               >
-                <FiLinkedin className="socials--inner white" />
+                <SiLinkedin className="socials--inner white" />
               </a>
               <a
                 className="socials__outer white"
@@ -84,7 +84,7 @@ const Footer = () => {
                 alt="instagram link"
                 aria-label="Instagram"
               >
-                <FiInstagram className="socials--inner" />
+                <SiInstagram className="socials--inner" />
               </a>
             </div>
           </div>

@@ -4,9 +4,9 @@ import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 
-import { FiInstagram } from "react-icons/fi"
-import { FiTwitter } from "react-icons/fi"
-import { FiLinkedin } from "react-icons/fi"
+import { SiInstagram } from "react-icons/si"
+import { SiTwitter } from "react-icons/si"
+import { SiLinkedin } from "react-icons/si"
 import Title from "../components/Title"
 
 const BlogTemplate = ({ data }) => {
@@ -36,7 +36,7 @@ const BlogTemplate = ({ data }) => {
                   alt="twitter link"
                   aria-label="Twitter"
                 >
-                  <FiTwitter className="blogs--inner" />
+                  <SiTwitter className="blogs--inner" />
                 </a>
               </li>
               <li className="template__lists">
@@ -49,7 +49,7 @@ const BlogTemplate = ({ data }) => {
                   alt="linkedin link"
                   aria-label="LinkedIn"
                 >
-                  <FiLinkedin className="blogs--inner" />
+                  <SiLinkedin className="blogs--inner" />
                 </a>
               </li>
               <li className="template__lists">
@@ -62,7 +62,7 @@ const BlogTemplate = ({ data }) => {
                   alt="instagram link"
                   aria-label="Instagram"
                 >
-                  <FiInstagram className="blogs--inner" />
+                  <SiInstagram className="blogs--inner" />
                 </a>
               </li>
             </ul>

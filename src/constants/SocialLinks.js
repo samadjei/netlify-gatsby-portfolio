@@ -1,8 +1,8 @@
 import React from "react"
-import { FiGithub } from "react-icons/fi"
-import { FiLinkedin } from "react-icons/fi"
-import { FiInstagram } from "react-icons/fi"
-import { FiTwitter } from "react-icons/fi"
+import { SiGithub } from "react-icons/Si"
+import { SiLinkedin } from "react-icons/Si"
+import { SiInstagram } from "react-icons/Si"
+import { SiTwitter } from "react-icons/Si"
 
 function socialLinks() {
   return (
@@ -14,7 +14,7 @@ function socialLinks() {
           href="https://github.com/samadjei"
           alt="github link"
         >
-          <FiGithub className="social-item" />
+          <SiGithub className="social-item" />
         </a>
       </li>
       <li className="menu__social">
@@ -24,7 +24,7 @@ function socialLinks() {
           href="https://uk.linkedin.com/in/samuel-adjei?trk=people-guest_people_search-card"
           alt="linkedin link"
         >
-          <FiLinkedin className="social-item" />
+          <SiLinkedin className="social-item" />
         </a>
       </li>
       <li className="menu__social">
@@ -34,7 +34,7 @@ function socialLinks() {
           href="https://www.instagram.com/samadjeiltd/"
           alt="instagram link"
         >
-          <FiInstagram className="social-item" />
+          <SiInstagram className="social-item" />
         </a>
       </li>
       <li className="menu__social">
@@ -44,7 +44,7 @@ function socialLinks() {
           href="https://twitter.com/samkadjei"
           alt="twitter link"
         >
-          <FiTwitter className="social-item" />
+          <SiTwitter className="social-item" />
         </a>
       </li>
     </ul>
