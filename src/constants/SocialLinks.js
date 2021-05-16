@@ -1,8 +1,8 @@
 import React from "react"
-import { SiGithub } from "react-icons/Si"
-import { SiLinkedin } from "react-icons/Si"
-import { SiInstagram } from "react-icons/Si"
-import { SiTwitter } from "react-icons/Si"
+import { SiGithub } from "react-icons/si"
+import { SiLinkedin } from "react-icons/si"
+import { SiInstagram } from "react-icons/si"
+import { SiTwitter } from "react-icons/si"
 
 function socialLinks() {
   return (
