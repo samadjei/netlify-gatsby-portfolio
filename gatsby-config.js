@@ -1,7 +1,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Freelance Web Designer in London & UK",
+    title: "Freelance Web Developer in London & UK",
     description:
       "I am a freelance web designer and developer specialising in building beautiful, responsive and modern websites for businesses.",
     author: "Sam Adjei",
@@ -112,5 +112,10 @@ module.exports = {
       },
     },
     `gatsby-plugin-robots-txt`,
+    {
+      cli: {
+        packageManager: "yarn",
+      },
+    },
   ],
 }
