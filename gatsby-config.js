@@ -60,7 +60,7 @@ module.exports = {
         apiURL: process.env.DEPLOY_URL
           ? "https://strapi-postgresql-portfolio.herokuapp.com"
           : "http://localhost:1337",
-        contentTypes: [`projects`, `blogs`],
+        collectionTypes: [`projects`, `blogs`],
       },
     },
     {
@@ -112,10 +112,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-robots-txt`,
-    {
-      cli: {
-        packageManager: "yarn",
-      },
-    },
   ],
 }
