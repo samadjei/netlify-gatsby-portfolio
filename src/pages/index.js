@@ -35,15 +35,18 @@ export const query = graphql`
         title
         url
         content
-				slug
+        slug
         image {
-          childImageSharp {
-            gatsbyImageData(
-              blurredOptions: { width: 100 }
-              placeholder: BLURRED
-              width: 420
-              transformOptions: { cropFocus: CENTER }
-            )
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                blurredOptions: { width: 100 }
+                placeholder: BLURRED
+                width: 420
+                transformOptions: { cropFocus: CENTER }
+								formats: [AUTO, WEBP, AVIF]
+              )
+            }
           }
         }
         stack {

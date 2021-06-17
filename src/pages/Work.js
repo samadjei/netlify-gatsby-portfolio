@@ -24,22 +24,29 @@ const Work = ({
 
 export const query = graphql`
   {
-    allStrapiProjects {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
         id
         title
-        content
         url
+        content
+        slug
         image {
-          childImageSharp {
-            gatsbyImageData(
-              blurredOptions: { width: 100 }
-              placeholder: BLURRED
-              width: 420
-							height: 210
-              transformOptions: { cropFocus: CENTER }
-            )
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                blurredOptions: { width: 100 }
+                placeholder: BLURRED
+                width: 420
+                transformOptions: { cropFocus: CENTER }
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
           }
+        }
+        stack {
+          id
+          title
         }
       }
     }
