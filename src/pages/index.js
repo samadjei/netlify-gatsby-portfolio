@@ -8,7 +8,6 @@ import MoreInfo from "../components/MoreInfo"
 import Contact from "../components/Contact"
 import SEO from "../components/SEO"
 import Blogs from "../components/Blogs"
-import Email from "../components/Email"
 
 export default function Home({ data }) {
   const {
@@ -24,7 +23,6 @@ export default function Home({ data }) {
       <Project projects={projects} title="See my work" showLink />
       <Contact title="Let's get connected" />
       <Blogs blogs={blogs} title="Latest Blog Posts" showLink />
-      <Email />
     </Layout>
   )
 }

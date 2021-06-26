@@ -1,6 +1,6 @@
 import React from "react"
 
-const Email = () => {
+const Subscription = () => {
   return (
     <div className="email container">
       <div className="email__inner">
@@ -51,4 +51,4 @@ const Email = () => {
   )
 }
 
-export default Email
+export default Subscription
