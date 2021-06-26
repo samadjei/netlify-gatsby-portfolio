@@ -22,15 +22,15 @@ const About = () => {
       <div className="about">
         <SEO
           title="About"
-          description="Hey there! I'm Samuel, a freelance web developer from Slough, UK."
+          description="Hey there! I'm Sam, a freelance web developer from Slough, UK."
         />
         <div className="about-me">
-          <Title className="about-title" title="About Samuel Adjei" />
+          <Title className="about-title" title="About Sam Adjei" />
         </div>
         <div className="about__center">
           <div className="about__content">
             <p className="about__content--info">
-              Hey there! I'm Samuel, a freelance front-end web developer based
+              Hey there! I'm Sam, a freelance front-end web developer based
               in Slough, UK. I've been making websites since 2018 as a hobby and
               have decided to turn that into a profession. Over this time, i
               have have fallen in love with web development and design which has

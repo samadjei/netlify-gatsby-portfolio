@@ -1,0 +1,40 @@
+@import "../abstracts/breakpoints";
+
+.email {
+  &__inner {
+    padding-bottom: 10rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    @include media("<=tablet") {
+      max-width: 40rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__description {
+    padding: 2rem 0;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include media("<=tablet") {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    padding: 15px 26px;
+  }
+}
+
+.btn--email {
+  @include media("<=tablet") {
+    margin-top: 3rem;
+    width: 100%;
+  }
+}

@@ -9,6 +9,8 @@ import { SiTwitter } from "react-icons/si"
 import { SiLinkedin } from "react-icons/si"
 import Title from "../components/Title"
 
+// import Disqus from "../components/Disqus"
+
 const BlogTemplate = ({ data }) => {
   const { content, title, description } = data.blog
 
@@ -23,6 +25,7 @@ const BlogTemplate = ({ data }) => {
               <ReactMarkdown>{content}</ReactMarkdown>
             </article>
           </div>
+          {/* <Disqus /> */}
           <div className="follow">
             <h3 className="follow__header">Follow me for more insights on:</h3>
             <ul className="template__links">

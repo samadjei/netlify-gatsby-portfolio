@@ -54,6 +54,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-strapi`,
       options: {
@@ -111,6 +112,11 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `www-samadjei-com-1`,
+      },
+    },
   ],
 }
