@@ -19,7 +19,7 @@
 
   &__flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     @include media("<=tablet") {
       justify-content: center;
@@ -28,8 +28,10 @@
   }
 
   &__input {
-    padding: 15px 26px;
-    flex: 3;
+    padding: 17px 26px;
+    @include media(">=tablet") {
+      width: 40rem;
+    }
   }
 }
 

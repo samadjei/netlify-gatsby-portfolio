@@ -26,7 +26,7 @@ const Subscription = () => {
               data-element="fields"
               data-stacked="false"
             >
-              <div>
+              <div className='email__line'>
                 <input
                   className="email__input"
                   name="email_address"
