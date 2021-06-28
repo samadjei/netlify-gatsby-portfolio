@@ -19,7 +19,7 @@
 
   &__flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     @include media("<=tablet") {
       justify-content: center;
@@ -29,10 +29,13 @@
 
   &__input {
     padding: 15px 26px;
+    flex: 3;
   }
 }
 
 .btn--email {
+  // flex: 1;
+
   @include media("<=tablet") {
     margin-top: 3rem;
     width: 100%;
