@@ -18,13 +18,8 @@ const query = graphql`
 `
 const SEO = ({ title }) => {
   const { site } = useStaticQuery(query)
-  const {
-    siteDesc,
-    siteTitle,
-    siteUrl,
-    image,
-    twitterUsername,
-  } = site.siteMetadata
+  const { siteDesc, siteTitle, siteUrl, image, twitterUsername } =
+    site.siteMetadata
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={siteDesc} />
@@ -34,6 +29,7 @@ const SEO = ({ title }) => {
       <meta name="author" content={title} />
       <meta name="description" property="og:description" content={siteDesc} />
       <meta name="image" property="og:image" content={`${siteUrl}${image}`} />
+      <meta name="image" property="og:image" content={title} />
 
       {/* twitter cards */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -41,6 +37,7 @@ const SEO = ({ title }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta name="twitter:image:alt" content={title} />
     </Helmet>
   )
 }
