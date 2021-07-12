@@ -1,19 +1,11 @@
-// import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+import { DiscussionEmbed } from "disqus-react"
 
-// const PostTemplate = () => {
-//   let disqusConfig = {
-//     url: `${`http://localhost:8000/` + location.pathname}`,
-//     identifier: post.id,
-//     title: post.title,
-//   }
-//   return (
-//     <>
-//       <h1>{post.title}</h1>
-//       <CommentCount config={disqusConfig} placeholder={"..."} />
-//       /* Post Contents */
-//       <Disqus config={disqusConfig} />
-//     </>
-//   )
-// }
-
-// export default PostTemplate
+;<DiscussionEmbed
+  shortname="example"
+  config={{
+    url: this.props.article.url,
+    identifier: this.props.article.id,
+    title: this.props.article.title,
+    language: "zh_TW",
+  }}
+/>

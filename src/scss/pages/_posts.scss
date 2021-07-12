@@ -1,5 +1,5 @@
 .blog-setup {
-	padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .template__links {
@@ -22,15 +22,19 @@
 
 .blog-content a {
   color: $primary-color;
-  background-image: linear-gradient(180deg, $primary-color 0%, $primary-color 100%);
+  background-image: linear-gradient(
+    180deg,
+    $primary-color 0%,
+    $primary-color 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2rem;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-	padding-bottom: 0.1rem;
+  padding-bottom: 0.1rem;
   &:hover {
     background-size: 100% 88%;
-		color: $white;
+    color: $white;
   }
 }
 
@@ -38,4 +42,8 @@ pre {
   background: $primary-color;
   color: $white;
   padding: 4rem 8.3rem;
+}
+
+.disqus {
+  margin-top: 3rem;
 }
