@@ -21,7 +21,7 @@ const BlogTemplate = ({ data, pageContext }) => {
   const disqusConfig = {
     identifier: id,
     title: title,
-    url: baseURL + pageContext.slug,
+    url: baseURL + "blogs/" + pageContext.slug,
   }
 
   return (
@@ -48,6 +48,7 @@ const BlogTemplate = ({ data, pageContext }) => {
                   href={
                     "https://www.twitter.com/share?url=" +
                     baseURL +
+                    "blogs/" +
                     pageContext.slug +
                     "&via" +
                     "twitterHandle"
@@ -64,10 +65,11 @@ const BlogTemplate = ({ data, pageContext }) => {
                   className="template__outer"
                   target="_blank"
                   rel="noopener noreferrer"
-									href={
-										// !Fix link
+                  href={
+                    // !Fix link
                     "https://www.linkedin.com/shareArticle?mini=true&url=" +
                     baseURL +
+                    "blogs/" +
                     pageContext.slug
                   }
                   alt="linkedin link"
@@ -98,6 +100,7 @@ const BlogTemplate = ({ data, pageContext }) => {
                   href={
                     "https://www.facebook.com/sharer.php?u=" +
                     baseURL +
+                    "/blogs/" +
                     pageContext.slug
                   }
                   alt="facebook link"
