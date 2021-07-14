@@ -64,8 +64,9 @@ const BlogTemplate = ({ data, pageContext }) => {
                   className="template__outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={
-                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+									href={
+										// !Fix link
+                    "https://www.linkedin.com/shareArticle?mini=true&url=" +
                     baseURL +
                     pageContext.slug
                   }
@@ -107,7 +108,11 @@ const BlogTemplate = ({ data, pageContext }) => {
               </li>
             </ul>
           </div>
-          <DiscussionEmbed className='disqus' shortname={disqusShortname} config={disqusConfig} />
+          <DiscussionEmbed
+            className="disqus"
+            shortname={disqusShortname}
+            config={disqusConfig}
+          />
         </section>
       </div>
     </Layout>
