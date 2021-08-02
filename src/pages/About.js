@@ -36,13 +36,13 @@ const About = () => {
               have have fallen in love with web development and design which has
               pushed me to strive to create the best quality websites possible.
             </p>
-            <p className="about__content--info">
+            {/* <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
               latest web technologies, allowing me to build great and fast
               websites. When left to my own devices, my preferred tech stack is
               React, SCSS and GraphQL with Gatsby or NextJS. This is then fed
               into an automated CI pipeline using on Netlify/Vercel via Git.
-            </p>
+            </p> */}
             <p className="about__content--info">
               However, as a contractor, i tend and depending on the project i'm
               undertaking, i tend to go for the WordPress route using the
